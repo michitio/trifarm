@@ -1,20 +1,19 @@
 /* var */
 
 :root {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+    --varpadding: 5%;
 }
 
 
 /* reset css */
 
 * {
-    --varpadding: 8%;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
 body {
-    --varpadding: 8%;
     margin: 0;
     padding: 0;
 }
@@ -23,7 +22,8 @@ body {
 /* banner */
 
 .banner {
-    background-image: url(./image/bgBanner.png), linear-gradient(180deg, rgb(13, 104, 51), rgba(13, 104, 51, 0.4), #efefef);
+    margin-top: 5rem;
+    background-image: url(./image/bgBanner.png), linear-gradient(180deg, rgb(13, 104, 51) 0%, #efefef 90%);
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -107,17 +107,19 @@ body {
     margin: 0 auto;
     box-sizing: border-box;
     float: left;
+    max-width: 25%;
 }
 
 .end-footer {
     box-sizing: border-box;
     margin: 0px 20px 0px;
-    padding: 30px;
+    padding: 10px 0;
 }
 
 .content-footer {
     color: rgb(240, 240, 240);
     margin: 5px;
+    font-size: 0.8rem;
     box-sizing: border-box;
 }
 
