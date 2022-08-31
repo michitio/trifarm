@@ -11,3 +11,7 @@ quy ước lưu trữ file
 1. lưu trữ các file vào đúng thư mục của nó
 2. đổi tên file lại (chỉ được dùng chữ in thường không dấu, số và dấu gạch ngang) 
     (ví dụ: san-pham-1, product-1)
+
+link tìm icons
+https://themify.me/themify-icons
+
