@@ -1,0 +1,135 @@
+/* var */
+
+:root {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+/* reset css */
+
+* {
+    --varpadding: 8%;
+}
+
+body {
+    --varpadding: 8%;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* banner */
+
+.banner {
+    background-image: url(./image/bgBanner.png), linear-gradient(180deg, rgb(13, 104, 51), rgba(13, 104, 51, 0.4), #efefef);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.group-item-banner {
+    background-color: white;
+    height: 140px;
+    box-sizing: border-box;
+    margin: 0px 24%;
+    padding: 15px 0px;
+}
+
+.item-banner {
+    width: 16.6%;
+    float: left;
+    text-align: center;
+}
+
+.text-item-banner {
+    text-transform: uppercase;
+    padding-top: 10px;
+}
+
+
+/* sản phẩm */
+
+.list-item-container {
+    background-color: white;
+    margin: 20px var(--varpadding) 5px;
+    /* height: 630px; */
+    padding: 25px 20px;
+    box-sizing: border-box;
+}
+
+.title-list-item {
+    color: rgb(2, 136, 58);
+    padding: 0px 25px;
+    /* margin: 0; */
+}
+
+.item-container {
+    display: flex;
+    /* align-items: center;
+    justify-content: space-around; */
+}
+
+.card {
+    float: left;
+    margin: 0 auto;
+}
+
+.price {
+    color: rgb(62, 85, 72);
+    float: right;
+}
+
+.price-new {
+    color: rgb(2, 136, 58);
+    float: left;
+}
+
+
+/* footer */
+
+.footer {
+    background-color: rgb(13, 104, 51);
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    padding: 35px var(--varpadding) 0px;
+    box-sizing: border-box;
+    /* height: 500px; */
+}
+
+.block-footer-container {
+    display: flex;
+}
+
+.block-footer {
+    margin: 0 auto;
+    box-sizing: border-box;
+    float: left;
+}
+
+.end-footer {
+    box-sizing: border-box;
+    margin: 0px 20px 0px;
+    padding: 30px;
+}
+
+.content-footer {
+    color: rgb(240, 240, 240);
+    margin: 5px;
+    box-sizing: border-box;
+}
+
+
+/* other */
+
+.separator {
+    background-color: rgba(204, 216, 203, 0.37);
+    height: 1px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}

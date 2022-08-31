@@ -1,0 +1,70 @@
+function SumSqueFor(n) {
+    var sum = 0
+    for (let i = 1; i < n; i++) {
+        sum += i * i
+    }
+    return sum
+}
+
+function SumSqueWhile(n) {
+    var sum = 0
+    var i = 0
+    while (i < n) {
+        sum += i * i
+        i++
+    }
+    return sum
+}
+
+function SumSqueDoWhile(n) {
+    var sum = 0
+    var i = 0
+
+    do {
+        sum += i * i
+        i++
+    }
+    while (i < n);
+
+    return sum
+}
+
+// document.writeln(SumSqueDoWhile(5))
+
+function Chuoi(s) {
+    s = s.toLowerCase()
+    let result = ""
+    result += s[0].toUpperCase()
+
+    for (let i = 0; i < s.length - 1; i++) {
+        if (s[i] == " ") {
+            result += s[i + 1].toUpperCase()
+        } else
+            result += s[i + 1]
+    }
+    return result
+}
+
+// chuoi = prompt("Nhập chuỗi: ")
+// document.writeln(Chuoi(chuoi))
+
+var arr = new Array(
+    new Array("Nguyễn Như Trumg", 15, 8),
+    new Array("Nguyễn Hữu Lợi", 16, 10),
+    new Array("Trần Hoài Phương", 18, 10),
+    new Array("Đào Phạm Trung Tín", 10, 9.5)
+)
+
+function InSV() {
+    var result = ""
+    for (let i = 0; i < arr.length; i++) {
+        for (let j = 0; j < arr[i].length; j++) {
+            result += arr[i][j] + "\t"
+        }
+        result += "\n"
+    }
+    return result
+}
+
+document.writeln(InSV())
+console.log(InSV())
