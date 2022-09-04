@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta content='width=device-width, initial-scale=1' name='viewport' />
@@ -8,35 +9,33 @@
     <title>TriFarm - Xoài Cát Hòa Lộc</title>
 
     <link href='./image/web.png' rel='shortcut icon' type='image/png' />
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../../assets/css/style.css">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
 
     <link rel="shortcut icon" type="image/png" href="../../assets/img/favicon.ico">
 
-    <script src="script.js"></script>
+    <!-- <script src="script.js"></script> -->
 </head>
+
 <body>
     <!-- menu kế thừa -->
-    <nav style="background-color: rgb(13, 104, 51);" class="navbar navbar-expand-lg navbar-dark">
-        <div class="container-fluid" style="padding: 5px 40px;">
+    <nav class="header navbar navbar-expand-lg navbar-dark " style="position: fixed; z-index: 2;">
+        <div class="container-fluid" style="background-color: rgb(13, 104, 51);">
             <a class="navbar-brand" href="#">
-                <!-- <img src="./image/web.png" height="50px"> -->
-                <img src="../../assets/img/title.png" height="80px">
+                <img src="../..//assets/img/title.png" height="40px">
             </a>
+
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Trang chủ</a>
-                    </li>
-
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Danh mục sản phẩm</a>
+                        Danh mục sản phẩm</a>
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="#">Trái cây</a></li>
                             <li><a class="dropdown-item" href="#">Rau củ</a></li>
@@ -45,10 +44,6 @@
                             <li><a class="dropdown-item" href="#">Trà, Cà phê</a></li>
                             <li><a class="dropdown-item" href="#">Bơ, Sữa, Pho mát</a></li>
                             <li><a class="dropdown-item" href="#">Trái cây khô, Mứt</a></li>
-                            <!-- <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li> -->
                         </ul>
                     </li>
 
@@ -61,154 +56,161 @@
                     </li>
 
                 </ul>
-                <form class="d-flex" role="search" style="margin-left: 200px;">
-                    <input class="form-control me-2" type="search" placeholder="Tìm sản phẩm" aria-label="Search">
-                    <button class="btn btn-outline-success" style="width: 200px; color: white;" type="submit">Tìm kiếm</button>
-                </form>
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="margin-left: 200px;">
+                <div class="search-box col-xl-4 d-md-none d-xl-block">
+                    <form class=" d-flex " role="search">
+                        <input class="form-control me-2" type="search" placeholder="Tìm sản phẩm" aria-label="Search">
+                        <button class="btn btn-outline-success" style="width: 200px; color: white;" type="submit">Tìm kiếm</button>
+                    </form>
+                </div>
+
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="margin-left: 8%;">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Đăng nhập/Đăng ký</a>
+                        <a class="nav-link" href="#">Đăng nhập</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Giỏ hàng</a>
+                        <a class="nav-link" href="#">Đăng ký</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <i class="ti-shopping-cart" style="font-size: 32px;"></i>
+                        </a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
     <!--  -->
-    <nav aria-label="breadcrumb">
+    <nav aria-label="breadcrumb" style="margin-top: 70px !important;">
         <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="#">Trang Chu</a></li>
             <li class="breadcrumb-item"><a href="#">Rau Cu</a></li>
             <li class="breadcrumb-item"><a href="#">Xoai Cat Hoa Loc</a></li>
         </ol>
     </nav>
-    
+
     <!-- giao diện -->
     <div class="wm-mobile column">
-    <div class="three column row" style="margin :0px auto;">
-        <div class="column" style="width: 300px; margin: 10px;">
-            <div class="ui segment">
-            <img src="./image/xoài cát hòa lộc.png" alt="xoai cat" class="fotorama__img" style="width: 262px; height: 262px; left: 0px; top: 0px;">>
-            </div>
-        </div>
-        <div class="column" style="width: 350px; margin: 10px;">
-            <h1 class="color font h1">Xoài Cát Hòa Lộc</h1>
-            <table class="retangle tb">
-                <tbody>
-                    <tr>
-                        <td class="name_price"><strong>Giá cũ</strong> :</td>
-                        <td class="lbl_price"> <del>23,000 Đ</del></td>
-                    </tr>
-                    <tr>
-                        <td class="name_price"><strong>Giá ưu đãi</strong> :</td>
-                        <td class="lbl_price"> 15,000 Đ</td>
-                    </tr>
-                </tbody>
-            </table>
-            <div class="vie.mo_ta">
-                <p ><strong>Mô tả:</strong></p>
-                Cung cấp nhiều vitamin và dưỡng chất tốt cho cơ thể Hương vị thơm ngon Có thể chế biến thành nhiều món ăn
-                </div>
-        </div>
-        <div class="column" style="width: 200px; margin: 10px;">
-            <div class="in-stock">
-                <div class="stock">Còn hàng</div>
-            </div>
-            <br>
-            <div class="soluong">
-                <label > Số Lượng</label>
-                <input type="number" name="quantity" class="txt-quantity" placeholder="1" value="1" min="0">
-            </div>
-            <br>
-            <div class="btn-add-cart ui animated green big button" tabindex="0" data-url="/carts">
-                <div class="visible content">Thêm vào giỏ</div>
-                <div class="hidden content">
-                    <i class="icon add to cart"></i>
+        <div class="three column row" style="margin :0px auto;">
+            <div class="column" style="width: 300px; margin: 10px;">
+                <div class="ui segment">
+                    <img src="./image/xoài cát hòa lộc.png" alt="xoai cat" class="fotorama__img" style="width: 262px; height: 262px; left: 0px; top: 0px;">>
                 </div>
             </div>
-            <br>
-            <div class="btn-add-cart ui animated red big button" tabindex="0" data-url="/checkout">
-                <div class="visible content">Mua ngay</div>
-                <div class="hidden content">
-                    <i class="icon check out"></i>
+            <div class="column" style="width: 350px; margin: 10px;">
+                <h1 class="color font h1">Xoài Cát Hòa Lộc</h1>
+                <table class="retangle tb">
+                    <tbody>
+                        <tr>
+                            <td class="name_price"><strong>Giá cũ</strong> :</td>
+                            <td class="lbl_price"> <del>23,000 Đ</del></td>
+                        </tr>
+                        <tr>
+                            <td class="name_price"><strong>Giá ưu đãi</strong> :</td>
+                            <td class="lbl_price"> 15,000 Đ</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="vie.mo_ta">
+                    <p><strong>Mô tả:</strong></p>
+                    Cung cấp nhiều vitamin và dưỡng chất tốt cho cơ thể Hương vị thơm ngon Có thể chế biến thành nhiều món ăn
+                </div>
+            </div>
+            <div class="column" style="width: 200px; margin: 10px;">
+                <div class="in-stock">
+                    <div class="stock">Còn hàng</div>
+                </div>
+                <br>
+                <div class="soluong">
+                    <label> Số Lượng</label>
+                    <input type="number" name="quantity" class="txt-quantity" placeholder="1" value="1" min="0">
+                </div>
+                <br>
+                <div class="btn-add-cart ui animated green big button" tabindex="0" data-url="/carts">
+                    <div class="visible content">Thêm vào giỏ</div>
+                    <div class="hidden content">
+                        <i class="icon add to cart"></i>
+                    </div>
+                </div>
+                <br>
+                <div class="btn-add-cart ui animated red big button" tabindex="0" data-url="/checkout">
+                    <div class="visible content">Mua ngay</div>
+                    <div class="hidden content">
+                        <i class="icon check out"></i>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="row">
-      <a class="item active" data-tab="first">Chi tiết</a>    <!-- <a class="item" data-tab="second">Đánh giá</a> -->
+        <div class="row">
+            <a class="item active" data-tab="first">Chi tiết</a>
+            <!-- <a class="item" data-tab="second">Đánh giá</a> -->
 
-     <div class="ui bottom attached tab segment wm-limit-img active" data-tab="first">
-        <h2 style="box-sizing: border-box; font-family: Roboto-Light, sans-serif; line-height: 1.4; color: #111111; margin-top: 0px; margin-bottom: 10px; font-size: 32px; font-weight: 400 !important;">Thông tin sản phẩm</h2>
-       <h3 style="box-sizing: border-box; font-family: Roboto-Medium, sans-serif; line-height: 1.4; color: #111111; margin-top: 0px; margin-bottom: 10px; font-size: 16px; font-weight: 400 !important;">Xoài Cát Hòa Lộc</h3>
-     <p style="box-sizing: border-box; margin: 0px 0px 8px; color: #333333; font-family: Roboto, sans-serif; font-size: 13px; line-height: 20px; text-align: justify;"><span style="box-sizing: border-box; font-family: Roboto-Medium, sans-serif;"
-    >Xoài cát Hòa Lộc</span>&nbsp; là loại xoài đặc sản nổi tiếng của vùng đồng bằng sông Cửu Long,
-     một trong những loại trái cây chủ lực của Tiền Giang.[1] Xoài cát Hòa Lộc là loại trái cây đặc sản của tỉnh Tiền Giang, 
-    và là sản phẩm trái cây đầu tiên của vùng đồng bằng sông Cửu Long được cấp bảo hộ chỉ dẫn địa lý.</p>
- 
-<!-- <div class="ui bottom attached tab segment" data-tab="second">
+            <div class="ui bottom attached tab segment wm-limit-img active" data-tab="first">
+                <h2 style="box-sizing: border-box; font-family: Roboto-Light, sans-serif; line-height: 1.4; color: #111111; margin-top: 0px; margin-bottom: 10px; font-size: 32px; font-weight: 400 !important;">Thông tin sản phẩm</h2>
+                <h3 style="box-sizing: border-box; font-family: Roboto-Medium, sans-serif; line-height: 1.4; color: #111111; margin-top: 0px; margin-bottom: 10px; font-size: 16px; font-weight: 400 !important;">Xoài Cát Hòa Lộc</h3>
+                <p style="box-sizing: border-box; margin: 0px 0px 8px; color: #333333; font-family: Roboto, sans-serif; font-size: 13px; line-height: 20px; text-align: justify;"><span style="box-sizing: border-box; font-family: Roboto-Medium, sans-serif;">Xoài cát Hòa Lộc</span>&nbsp; là loại xoài đặc sản nổi tiếng của vùng đồng bằng sông Cửu Long, một trong những loại trái cây chủ lực của Tiền Giang.[1] Xoài
+                    cát Hòa Lộc là loại trái cây đặc sản của tỉnh Tiền Giang, và là sản phẩm trái cây đầu tiên của vùng đồng bằng sông Cửu Long được cấp bảo hộ chỉ dẫn địa lý.</p>
+
+                <!-- <div class="ui bottom attached tab segment" data-tab="second">
 Second
 </div> -->
-    </div>
-</div>
-<div class="footer">
-    <div class="block-footer">
-        <h4>Hỗ trợ khách hàng</h4>
-        <p class="content-footer">Các câu hỏi thường gặp</p>
-        <p class="content-footer">Chính sách đổi trả</p>
-        <p class="content-footer">Hướng dẫn đặt hàng</p>
-        <p class="content-footer">Phương thức vận chuyển</p>
-        <p class="content-footer">Chính sách hàng nhập khẩu</p>
-    </div>
-
-    <div class="block-footer">
-        <h4>Kết nối với TriFarm</h4>
-        <p class="content-footer">Facebook: facebook.com/trifarmvn</p>
-        <p class="content-footer">Youtube: youtube.com/user/TriFarmVN</p>
-        <p class="content-footer">Hotline: 1900-6035<br>(Miễn phí, 6h-20h)</p>
-        <p class="content-footer">Hỗ trợ khách hàng: hotro@trifarm.epizy.com</p>
-        <p class="content-footer">Báo lỗi bảo mật: security@trifarm.epizy.com</p>
-    </div>
-
-    <div class="block-footer">
-        <h4>Về TriFarm</h4>
-        <p class="content-footer">Giới thiệu TriFarm</p>
-        <p class="content-footer">Tuyển dụng</p>
-        <p class="content-footer">Chính sách bảo mật</p>
-        <p class="content-footer">Chính sách giải quyết khiếu nại</p>
-        <p class="content-footer">Điều khoản sử dụng</p>
-        <p class="content-footer">Bán hàng doanh nghiệp</p>
-        <p class="content-footer">Điều kiện vận chuyển</p>
-    </div>
-
-    <div class="block-footer">
-        <div style="margin-bottom: 30px;">
-            <h4>Hợp tác và liên kết</h4>
-            <p class="content-footer">Quy chế hoạt động Sàn GDTMĐT</p>
-            <p class="content-footer">Bán hàng cùng TriFarm</p>
+            </div>
         </div>
-        <div style="margin-bottom: 30px;">
-            <h4>Dịch vụ giao hàng</h4>
-            <img src="./image/TriNOW Logo.png" height="24px">
-        </div>
-        <div style="margin-bottom: 30px;">
-            <h4>Chứng nhận bởi</h4>
-            <img src="./image/logoSaleNoti.png" height="48px">
-        </div>
-    </div>
 
-    <br style="clear: both;">
-    <div class="end-footer">
-        <h4>TriFarm - Thật nhanh, thật chất lượng, thật rẻ</h4>
-        <p class="content-footer">Với hàng ngàn sản phẩm từ các nông trại, cửa hàng uy tín, hàng trăm loại mặt hàng nông sản, những khuyến mãi, ưu đãi tràn ngập, kèm theo dịch vụ giao hàng siêu tốc TriNOW, TriFarm mang đến cho bạn một trải nghiệm đi chợ online không giới hạn,
-            mang cả nông trại về căn bếp của bạn.</p>
-        <div class="separator"></div>
-        <p class="content-footer">Trụ sở chính: Công ty TNHH TriFarm – Phòng 2306, Tòa nhà Vincom Center, Số 72, đường Lê Thánh Tôn, Phường Bến Nghé, Quận 1, TP Hồ Chí Minh</p>
-        <p class="content-footer">TriFarm nhận đặt hàng trực tuyến và giao hàng tận nơi, chưa hỗ trợ mua và nhận hàng trực tiếp tại văn phòng hoặc trung tâm xử lý đơn hàng</p>
-        <p class="content-footer">© 2022 - Bản quyền của Công ty TNHH TriFarm</p>
-    </div>
-</div>
+        <div class="footer ">
+            <div class="row block-footer-container">
+                <div class="row">
+                    <div class="col-xl-2"></div>
+                    <div class="block-footer  col-12 col-md-4 col-xl-2">
+                        <h6>Hỗ trợ khách hàng</h6>
+                        <p class="content-footer ">Các câu hỏi thường gặp</p>
+                        <p class="content-footer ">Chính sách đổi trả</p>
+                        <p class="content-footer ">Hướng dẫn đặt hàng</p>
+                        <p class="content-footer ">Phương thức vận chuyển</p>
+                        <p class="content-footer ">Chính sách hàng nhập khẩu</p>
+                    </div>
+
+                    <div class="block-footer  col-12 col-md-4 col-xl-2">
+                        <h6>Kết nối với TriFarm</h6>
+                        <p class="content-footer ">Facebook: facebook.com/trifarmvn</p>
+                        <p class="content-footer ">Youtube: youtube.com/user/TriFarmVN</p>
+                        <p class="content-footer ">Hotline: 1900-6035</p>
+                        <p class="content-footer ">Email: hotro@trifarm.epizy.com</p>
+                        <p class="content-footer ">Báo lỗi bảo mật: security@trifarm.epizy.com</p>
+                    </div>
+
+                    <div class="block-footer  col-12 d-none d-xl-block col-xl-2">
+                        <h6>Về TriFarm</h6>
+                        <p class="content-footer ">Giới thiệu TriFarm</p>
+                        <p class="content-footer ">Tuyển dụng</p>
+                        <p class="content-footer ">Chính sách bảo mật</p>
+                        <p class="content-footer ">Chính sách giải quyết khiếu nại</p>
+                        <p class="content-footer ">Điều khoản sử dụng</p>
+                        <p class="content-footer ">Bán hàng doanh nghiệp</p>
+                        <p class="content-footer ">Điều kiện vận chuyển</p>
+                    </div>
+
+                    <div class="block-footer d-none d-md-block col-md-4 col-xl-2">
+                        <div style="margin-bottom: 30px; ">
+                            <h6>Dịch vụ giao hàng</h6>
+                            <img src="../..//assets/img/TriNOW Logo.png " height="48px ">
+                        </div>
+                        <div style="margin-bottom: 30px; ">
+                            <h6>Chứng nhận bởi</h6>
+                            <img src="../..//assets/img/logoSaleNoti.png " height="48px ">
+                        </div>
+                    </div>
+                    <div class="col-xl-2"></div>
+                </div>
+                <div class="end-footer row">
+                    <div class="col-12">
+                        <div class="separator "></div>
+                        <p class="content-footer" style="text-align: center;">© TriFarm 2022</p>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
 </body>
+
 </html>
