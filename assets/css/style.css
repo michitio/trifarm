@@ -1,29 +1,42 @@
-/* var */
+/* common */
 
 :root {
-    --varpadding: 5%;
+    --varpadding: 0%;
 }
 
 
 /* reset css */
 
 * {
-    padding: 0;
-    margin: 0;
     box-sizing: border-box;
 }
 
-body {
-    margin: 0;
-    padding: 0;
+html {
+    /* overflow: hidden; */
+}
+
+.main {}
+
+.header {
+    background-color: rgb(13, 104, 51);
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 70px;
+    color: #fff;
+}
+
+.header .search-box {
+    align-items: center;
+    justify-content: center;
 }
 
 
 /* banner */
 
 .banner {
-    margin-top: 5rem;
-    background-image: url(./image/bgBanner.png), linear-gradient(180deg, rgb(13, 104, 51) 0%, #efefef 90%);
+    margin-top: 70px !important;
+    background-image: url(../img/backgroundBanner.png), linear-gradient(180deg, rgb(13, 104, 51) 0%, #fff 90%);
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -33,7 +46,7 @@ body {
     background-color: white;
     height: 140px;
     box-sizing: border-box;
-    margin: 0px 24%;
+    /* margin: 0px 24%; */
     padding: 15px 0px;
 }
 
@@ -53,8 +66,10 @@ body {
 
 .list-item-container {
     background-color: white;
-    margin: 20px var(--varpadding) 5px;
+    width: 85%;
+    margin-top: 20px !important;
     /* height: 630px; */
+    margin: 0 auto;
     padding: 25px 20px;
     box-sizing: border-box;
 }
@@ -62,13 +77,14 @@ body {
 .title-list-item {
     color: rgb(2, 136, 58);
     padding: 0px 25px;
+    font-size: 1.5rem;
     /* margin: 0; */
 }
 
 .item-container {
-    display: flex;
-    /* align-items: center;
-    justify-content: space-around; */
+    /* display: flex;
+    align-items: center;
+    justify-content: space; */
 }
 
 .card {
@@ -86,34 +102,39 @@ body {
     float: left;
 }
 
+.buy-btn {
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
 
 /* footer */
 
 .footer {
     background-color: rgb(13, 104, 51);
     color: white;
-    margin-top: 10px;
-    margin-bottom: 0px;
-    padding: 35px var(--varpadding) 0px;
+    /* margin-top: 10px; */
+    /* margin-bottom: 0px; */
+    /* padding: 35px 0 0px; */
     box-sizing: border-box;
     /* height: 500px; */
 }
 
 .block-footer-container {
-    display: flex;
+    padding: 24px;
 }
 
 .block-footer {
-    margin: 0 auto;
+    margin: 10px 0 !important;
     box-sizing: border-box;
-    float: left;
-    max-width: 25%;
+    /* float: left; */
 }
 
 .end-footer {
     box-sizing: border-box;
-    margin: 0px 20px 0px;
-    padding: 10px 0;
+    /* margin-top: 10px; */
+    /* padding-bottom: 10px; */
+    /* padding: 10px 0; */
 }
 
 .content-footer {
@@ -129,9 +150,9 @@ body {
 .separator {
     background-color: rgba(204, 216, 203, 0.37);
     height: 1px;
-    width: 80%;
+    width: 60%;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 20px;
+    margin-top: 10px;
     margin-bottom: 10px;
 }

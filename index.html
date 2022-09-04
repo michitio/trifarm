@@ -8,7 +8,6 @@
 
     <title>TriFarm - Nông sản xanh</title>
 
-    <link href='./assets/img/Logo.png' rel='shortcut icon' type='image/png' />
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/fonts/themify-icons/themify-icons.css">
 
@@ -17,257 +16,266 @@
 
     <link rel="shortcut icon" type="image/png" href=".//assets/img/favicon.ico">
 
-    <script src="script.js"></script>
+    <!-- <script src="script.js"></script> -->
 </head>
 
-<body style="background-color: #efefef">
+<body>
+    <div class="main container-fluid" style="padding: 0;">
+        <!-- menu -->
+        <nav class="header navbar navbar-expand-lg navbar-dark " style="position: fixed; z-index: 2;">
+            <div class="container-fluid" style="background-color: rgb(13, 104, 51);">
+                <a class="navbar-brand" href="#">
+                    <img src="./assets/img/title.png" height="40px">
+                </a>
 
-    <!-- menu -->
-    <nav style="background-color: rgb(13, 104, 51); position: fixed; width: 100%; z-index: 1; top: 0; left: 0;" class="navbar navbar-expand-lg navbar-dark">
-        <div class="container-fluid" style="padding: 0px var(--varpadding); background-color: rgb(13, 104, 51);">
-            <a class="navbar-brand" href="#">
-                <!-- <img src="./assets/img/Logo.png" height="48px"> -->
-                <img src="./assets/img/title.png" height="54px">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Trang chủ</a>
-                    </li>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Danh mục sản phẩm</a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Trái cây</a></li>
-                            <li><a class="dropdown-item" href="#">Rau củ</a></li>
-                            <li><a class="dropdown-item" href="#">Trứng</a></li>
-                            <li><a class="dropdown-item" href="#">Gạo, mì</a></li>
-                            <li><a class="dropdown-item" href="#">Trà, Cà phê</a></li>
-                            <li><a class="dropdown-item" href="#">Bơ, Sữa, Pho mát</a></li>
-                            <li><a class="dropdown-item" href="#">Trái cây khô, Mứt</a></li>
-                            <!-- <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li> -->
-                        </ul>
-                    </li>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Trái cây</a></li>
+                                <li><a class="dropdown-item" href="#">Rau củ</a></li>
+                                <li><a class="dropdown-item" href="#">Trứng</a></li>
+                                <li><a class="dropdown-item" href="#">Gạo, mì</a></li>
+                                <li><a class="dropdown-item" href="#">Trà, Cà phê</a></li>
+                                <li><a class="dropdown-item" href="#">Bơ, Sữa, Pho mát</a></li>
+                                <li><a class="dropdown-item" href="#">Trái cây khô, Mứt</a></li>
+                            </ul>
+                        </li>
 
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Tin tức</a>
-                    </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Tin tức</a>
+                        </li>
 
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Về TriFarm</a>
-                    </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Về TriFarm</a>
+                        </li>
 
-                </ul>
-                <form class="d-flex" role="search" style="margin-left: 10%;">
-                    <input class="form-control me-2" type="search" placeholder="Tìm sản phẩm" aria-label="Search">
-                    <button class="btn btn-outline-success" style="width: 200px; color: white;" type="submit">Tìm kiếm</button>
-                </form>
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="margin-left: 10%;">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Đăng nhập/Đăng ký</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#"><i class="ti-shopping-cart" style="font-size: 32px;"></i></a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+                    </ul>
+                    <div class="search-box col-xl-4 d-md-none d-xl-block">
+                        <form class=" d-flex " role="search">
+                            <input class="form-control me-2" type="search" placeholder="Tìm sản phẩm" aria-label="Search">
+                            <button class="btn btn-outline-success" style="width: 200px; color: white;" type="submit">Tìm kiếm</button>
+                        </form>
+                    </div>
 
-    <!-- banner -->
-    <div class="banner">
-        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-bs-ride="true" style="margin: 0px 24%">
-            <!-- Indicators -->
-            <div class="carousel-indicators ">
-                <button type="button " data-bs-target="#carouselExampleIndicators " data-bs-slide-to="0 " class="active " aria-current="true " aria-label="Slide 1 "></button>
-                <button type="button " data-bs-target="#carouselExampleIndicators " data-bs-slide-to="1 " aria-label="Slide 2 "></button>
-                <button type="button " data-bs-target="#carouselExampleIndicators " data-bs-slide-to="2 " aria-label="Slide 3 "></button>
-                <button type="button " data-bs-target="#carouselExampleIndicators " data-bs-slide-to="3 " aria-label="Slide 4 "></button>
-            </div>
-
-            <!-- The slideshow -->
-            <div class="carousel-inner ">
-                <div class="carousel-item active ">
-                    <img src="./assets/img/banner1.png " alt="Pic1 " class="d-block w-100 ">
-                </div>
-                <div class="carousel-item ">
-                    <img src="./assets/img/banner2.png " alt="Pic2 " class="d-block w-100 ">
-                </div>
-                <div class="carousel-item ">
-                    <img src="./assets/img/banner3.png " alt="Pic3 " class="d-block w-100 ">
-                </div>
-                <div class="carousel-item ">
-                    <img src="./assets/img/banner4.png " alt="Pic4 " class="d-block w-100 ">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="margin-left: 8%;">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Đăng nhập</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Đăng ký</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <i class="ti-shopping-cart" style="font-size: 32px;"></i>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
             </div>
-            <!-- Left and right controls -->
-            <button class="carousel-control-prev " type="button " data-bs-target="#carouselExampleIndicators " data-bs-slide="prev ">
-          <span class="carousel-control-prev-icon " aria-hidden="true "></span>
-          <span class="visually-hidden ">Previous</span>
-        </button>
-            <button class="carousel-control-next " type="button " data-bs-target="#carouselExampleIndicators " data-bs-slide="next ">
-          <span class="carousel-control-next-icon " aria-hidden="true "></span>
-          <span class="visually-hidden ">Next</span>
-        </button>
+        </nav>
 
-        </div>
+        <!-- banner -->
+        <div class="banner row g-0">
+            <div class="d-none d-md-block col-md-2 col-xl-3"></div>
+            <div class="col-12 col-md-8 col-xl-6">
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+                    <!-- Indicators -->
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                    </div>
+                    <!-- The slideshow -->
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="./assets/img/banner1.png" class="d-block w-100" alt="Pic1">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./assets/img/banner2.png" class="d-block w-100" alt="Pic2">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./assets/img/banner3.png" class="d-block w-100" alt="Pic3">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./assets/img/banner4.png" class="d-block w-100" alt="Pic4">
+                        </div>
+                    </div>
+                    <!-- Left and right controls -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
 
-        <div class="group-item-banner ">
-            <div class="item-banner ">
-                <img src="./assets/img/banner-item1.png " alt=" " width="64px">
-                <h6 class="text-item-banner ">Giao ngay 1h</h6>
-            </div>
+                <div class="group-item-banner d-none d-md-block">
+                    <div class="item-banner ">
+                        <img src="./assets/img/banner-item1.png " alt=" " width="40%">
+                        <h6 class="text-item-banner ">Giao ngay 1h</h6>
+                    </div>
 
-            <div class="item-banner ">
-                <img src="./assets/img/banner-item2.png " alt=" " width="64px">
-                <h6 class="text-item-banner ">Hẹn giờ săn deal</h6>
-            </div>
+                    <div class="item-banner ">
+                        <img src="./assets/img/banner-item2.png " alt=" " width="40%">
+                        <h6 class="text-item-banner ">Hẹn giờ săn deal</h6>
+                    </div>
 
-            <div class="item-banner ">
-                <img src="./assets/img/banner-item3.png " alt=" " width="64px">
-                <h6 class="text-item-banner ">Giá tốt mỗi ngày</h6>
-            </div>
+                    <div class="item-banner ">
+                        <img src="./assets/img/banner-item3.png " alt=" " width="40%">
+                        <h6 class="text-item-banner ">Giá tốt mỗi ngày</h6>
+                    </div>
 
-            <div class="item-banner ">
-                <img src="./assets/img/banner-item4.png " alt=" " width="64px">
-                <h6 class="text-item-banner ">Vào bếp</h6>
-            </div>
+                    <div class="item-banner ">
+                        <img src="./assets/img/banner-item4.png " alt=" " width="40%">
+                        <h6 class="text-item-banner ">Vào bếp</h6>
+                    </div>
 
-            <div class="item-banner ">
-                <img src="./assets/img/banner-item5.png " alt=" " width="64px">
-                <h6 class="text-item-banner ">Mã giảm giá</h6>
-            </div>
+                    <div class="item-banner ">
+                        <img src="./assets/img/banner-item5.png " alt=" " width="40%">
+                        <h6 class="text-item-banner ">Mã giảm giá</h6>
+                    </div>
 
-            <div class="item-banner ">
-                <img src="./assets/img/banner-item6.png " alt=" " width="64px">
-                <h6 class="text-item-banner ">Tin tức mới</h6>
-            </div>
-        </div>
-
-    </div>
-
-    <!-- sản phẩm -->
-    <div class="list-item-container ">
-        <h3 class="title-list-item ">GIÁ TỐT MỖI NGÀY</h3>
-        <div class="item-container ">
-            <div class="card " style="width: 18rem; margin: 10px; ">
-                <img src="https://amthuc.weba.vn/shop/images/amthuc/product/nhophanrang.png " class="card-img-top " alt="nho phan rang ">
-                <div class="card-body">
-                    <h5 class="card-title ">Nho xanh Phan Rang</h5>
-                    <h3 class="price-new ">₫98.000</h3>
-                    <h6 class="price "> <del>₫115.000</del></h6>
-                    <br style="clear: both; ">
-                    <p class="card-text ">Cung cấp nhiều vitamin và dưỡng chất tốt cho cơ thể</p>
-                    <a href="# " class="btn btn-success " style="margin-left: 50%; transform: translateX(-50%)">Mua ngay</a>
+                    <div class="item-banner ">
+                        <img src="./assets/img/banner-item6.png " alt=" " width="40%">
+                        <h6 class="text-item-banner ">Tin tức mới</h6>
+                    </div>
                 </div>
             </div>
+            <div class="d-none d-md-block col-md-2 col-xl-3"></div>
 
-            <div class="card " style="width: 18rem; margin: 10px; ">
-                <img src="https://amthuc.weba.vn/shop/images/amthuc/product/thanhlong.png " class="card-img-top " alt="thanh long ">
-                <div class="card-body ">
-                    <h5 class="card-title ">Thanh long ruột đỏ</h5>
-                    <h3 class="price-new ">₫28.000</h3>
-                    <h6 class="price "> <del>₫45.000</del></h6>
-                    <br style="clear: both; ">
-                    <p class="card-text ">Cung cấp nhiều vitamin và dưỡng chất tốt cho cơ thể</p>
-                    <a href="# " class="btn btn-success " style="margin-left: 50%; transform: translateX(-50%)">Mua ngay</a>
-                </div>
-            </div>
-
-            <div class="card " style="width: 18rem; margin: 10px; ">
-                <img src="https://amthuc.weba.vn/shop/images/amthuc/product/xoaikeo.png " class="card-img-top " alt="xoai ">
-                <div class="card-body ">
-                    <h5 class="card-title ">Xoài cát Hòa Lộc</h5>
-                    <h3 class="price-new ">₫18.000</h3>
-                    <h6 class="price "> <del>₫23.000</del></h6>
-                    <br style="clear: both; ">
-                    <p class="card-text ">Cung cấp nhiều vitamin và dưỡng chất tốt cho cơ thể</p>
-                    <a href="# " class="btn btn-success " style="margin-left: 50%; transform: translateX(-50%)">Mua ngay</a>
-                </div>
-            </div>
-
-            <div class="card " style="width: 18rem; margin: 10px; ">
-                <img src="https://amthuc.weba.vn/shop/images/amthuc/product/dua%20gang.png " class="card-img-top " alt="dua gang ">
-                <div class="card-body ">
-                    <h5 class="card-title ">Dưa gang Trung Quốc</h5>
-                    <h3 class="price-new ">₫26.000</h3>
-                    <h6 class="price "> <del>₫29.000</del></h6>
-                    <br style="clear: both; ">
-                    <p class="card-text ">Cung cấp nhiều vitamin và dưỡng chất tốt cho cơ thể</p>
-                    <a href="# " class="btn btn-success " style="margin-left: 50%; transform: translateX(-50%)">Mua ngay</a>
-                </div>
-            </div>
-
-            <div class="card " style="width: 18rem; margin: 10px; ">
-                <img src="https://amthuc.weba.vn/shop/images/amthuc/product/nhophanrang.png " class="card-img-top " alt="nho ninh thuan ">
-                <div class="card-body ">
-                    <h5 class="card-title ">Nho tròn Ninh Thuận</h5>
-                    <h3 class="price-new ">₫63.000</h3>
-                    <h6 class="price "> <del>₫88.000</del></h6>
-                    <br style="clear: both; ">
-                    <p class="card-text ">Cung cấp nhiều vitamin và dưỡng chất tốt cho cơ thể</p>
-                    <a href="# " class="btn btn-success " style="margin-left: 50%; transform: translateX(-50%)">Mua ngay</a>
-                </div>
-            </div>
         </div>
 
-    </div>
-
-    <br style="clear: both; ">
-    <div class="footer ">
-        <div class="block-footer-container">
-            <div class="block-footer ">
-                <h6>Hỗ trợ khách hàng</h6>
-                <p class="content-footer ">Các câu hỏi thường gặp</p>
-                <p class="content-footer ">Chính sách đổi trả</p>
-                <p class="content-footer ">Hướng dẫn đặt hàng</p>
-                <p class="content-footer ">Phương thức vận chuyển</p>
-                <p class="content-footer ">Chính sách hàng nhập khẩu</p>
-            </div>
-
-            <div class="block-footer ">
-                <h6>Kết nối với TriFarm</h6>
-                <p class="content-footer ">Facebook: facebook.com/trifarmvn</p>
-                <p class="content-footer ">Youtube: youtube.com/user/TriFarmVN</p>
-                <p class="content-footer ">Hotline: 1900-6035<br>(Miễn phí, 6h-20h)</p>
-                <p class="content-footer ">Hỗ trợ khách hàng: hotro@trifarm.epizy.com</p>
-                <p class="content-footer ">Báo lỗi bảo mật: security@trifarm.epizy.com</p>
-            </div>
-
-            <div class="block-footer ">
-                <h6>Về TriFarm</h6>
-                <p class="content-footer ">Giới thiệu TriFarm</p>
-                <p class="content-footer ">Tuyển dụng</p>
-                <p class="content-footer ">Chính sách bảo mật</p>
-                <p class="content-footer ">Chính sách giải quyết khiếu nại</p>
-                <p class="content-footer ">Điều khoản sử dụng</p>
-                <p class="content-footer ">Bán hàng doanh nghiệp</p>
-                <p class="content-footer ">Điều kiện vận chuyển</p>
-            </div>
-
-            <div class="block-footer ">
-                <div style="margin-bottom: 30px; ">
-                    <h6>Dịch vụ giao hàng</h6>
-                    <img src="./assets/img/TriNOW Logo.png " height="48px ">
+        <!-- sản phẩm -->
+        <div class="list-item-container ">
+            <h3 class="title-list-item ">GIÁ TỐT MỖI NGÀY</h3>
+            <div class="item-container row">
+                <div class="card col-10 col-md-6 col-xl-3" style="width: 18rem; margin: 10px; ">
+                    <img src="https://amthuc.weba.vn/shop/images/amthuc/product/nhophanrang.png " class="card-img-top " alt="nho phan rang ">
+                    <div class="card-body">
+                        <h5 class="card-title ">Nho xanh Phan Rang</h5>
+                        <h3 class="price-new ">₫98.000</h3>
+                        <h6 class="price "> <del>₫115.000</del></h6>
+                        <br style="clear: both; ">
+                        <p class="card-text ">Cung cấp nhiều vitamin và dưỡng chất tốt cho cơ thể</p>
+                        <a href="# " class="btn btn-success " style="margin-left: 50%; transform: translateX(-50%)">Mua ngay</a>
+                    </div>
                 </div>
-                <div style="margin-bottom: 30px; ">
-                    <h6>Chứng nhận bởi</h6>
-                    <img src="./assets/img/logoSaleNoti.png " height="48px ">
+
+                <div class="card col-10 col-md-6 col-xl-3" style="width: 18rem; margin: 10px; ">
+                    <img src="https://amthuc.weba.vn/shop/images/amthuc/product/thanhlong.png " class="card-img-top " alt="thanh long ">
+                    <div class="card-body ">
+                        <h5 class="card-title ">Thanh long ruột đỏ</h5>
+                        <h3 class="price-new ">₫28.000</h3>
+                        <h6 class="price "> <del>₫45.000</del></h6>
+                        <br style="clear: both; ">
+                        <p class="card-text ">Cung cấp nhiều vitamin và dưỡng chất tốt cho cơ thể</p>
+                        <a href="# " class="btn btn-success " style="margin-left: 50%; transform: translateX(-50%)">Mua ngay</a>
+                    </div>
+                </div>
+
+                <div class="card col-10 col-md-6 col-xl-3" style="width: 18rem; margin: 10px; ">
+                    <img src="https://amthuc.weba.vn/shop/images/amthuc/product/xoaikeo.png " class="card-img-top " alt="xoai ">
+                    <div class="card-body ">
+                        <h5 class="card-title ">Xoài cát Hòa Lộc</h5>
+                        <h3 class="price-new ">₫18.000</h3>
+                        <h6 class="price "> <del>₫23.000</del></h6>
+                        <br style="clear: both; ">
+                        <p class="card-text ">Cung cấp nhiều vitamin và dưỡng chất tốt cho cơ thể</p>
+                        <a href="# " class="btn btn-success buy-btn">Mua ngay</a>
+                    </div>
+                </div>
+
+                <div class="card col-10 col-md-6 col-xl-3" style="width: 18rem; margin: 10px; ">
+                    <img src="https://amthuc.weba.vn/shop/images/amthuc/product/dua%20gang.png " class="card-img-top " alt="dua gang ">
+                    <div class="card-body ">
+                        <h5 class="card-title ">Dưa gang Trung Quốc</h5>
+                        <h3 class="price-new ">₫26.000</h3>
+                        <h6 class="price "> <del>₫29.000</del></h6>
+                        <br style="clear: both; ">
+                        <p class="card-text ">Cung cấp nhiều vitamin và dưỡng chất tốt cho cơ thể</p>
+                        <a href="# " class="btn btn-success " style="margin-left: 50%; transform: translateX(-50%)">Mua ngay</a>
+                    </div>
+                </div>
+
+                <div class="card col-10 col-md-6 col-xl-3" style="width: 18rem; margin: 10px; ">
+                    <img src="https://amthuc.weba.vn/shop/images/amthuc/product/nhophanrang.png " class="card-img-top " alt="nho ninh thuan ">
+                    <div class="card-body ">
+                        <h5 class="card-title ">Nho tròn Ninh Thuận</h5>
+                        <h3 class="price-new ">₫63.000</h3>
+                        <h6 class="price "> <del>₫88.000</del></h6>
+                        <br style="clear: both; ">
+                        <p class="card-text ">Cung cấp nhiều vitamin và dưỡng chất tốt cho cơ thể</p>
+                        <a href="# " class="btn btn-success " style="margin-left: 50%; transform: translateX(-50%)">Mua ngay</a>
+                    </div>
                 </div>
             </div>
+
         </div>
 
-        <!-- <br style="clear: both; "> -->
-        <div class="end-footer ">
-            <div class="separator "></div>
-            <p class="content-footer" style="text-align: center;">© 2022 - Bản quyền của Công ty TNHH TriFarm</p>
+        <div class="footer ">
+            <div class="row block-footer-container">
+                <div class="row">
+                    <div class="col-xl-2"></div>
+                    <div class="block-footer  col-12 col-md-4 col-xl-2">
+                        <h6>Hỗ trợ khách hàng</h6>
+                        <p class="content-footer ">Các câu hỏi thường gặp</p>
+                        <p class="content-footer ">Chính sách đổi trả</p>
+                        <p class="content-footer ">Hướng dẫn đặt hàng</p>
+                        <p class="content-footer ">Phương thức vận chuyển</p>
+                        <p class="content-footer ">Chính sách hàng nhập khẩu</p>
+                    </div>
+
+                    <div class="block-footer  col-12 col-md-4 col-xl-2">
+                        <h6>Kết nối với TriFarm</h6>
+                        <p class="content-footer ">Facebook: facebook.com/trifarmvn</p>
+                        <p class="content-footer ">Youtube: youtube.com/user/TriFarmVN</p>
+                        <p class="content-footer ">Hotline: 1900-6035</p>
+                        <p class="content-footer ">Email: hotro@trifarm.epizy.com</p>
+                        <p class="content-footer ">Báo lỗi bảo mật: security@trifarm.epizy.com</p>
+                    </div>
+
+                    <div class="block-footer  col-12 d-none d-xl-block col-xl-2">
+                        <h6>Về TriFarm</h6>
+                        <p class="content-footer ">Giới thiệu TriFarm</p>
+                        <p class="content-footer ">Tuyển dụng</p>
+                        <p class="content-footer ">Chính sách bảo mật</p>
+                        <p class="content-footer ">Chính sách giải quyết khiếu nại</p>
+                        <p class="content-footer ">Điều khoản sử dụng</p>
+                        <p class="content-footer ">Bán hàng doanh nghiệp</p>
+                        <p class="content-footer ">Điều kiện vận chuyển</p>
+                    </div>
+
+                    <div class="block-footer d-none d-md-block col-md-4 col-xl-2">
+                        <div style="margin-bottom: 30px; ">
+                            <h6>Dịch vụ giao hàng</h6>
+                            <img src="./assets/img/TriNOW Logo.png " height="48px ">
+                        </div>
+                        <div style="margin-bottom: 30px; ">
+                            <h6>Chứng nhận bởi</h6>
+                            <img src="./assets/img/logoSaleNoti.png " height="48px ">
+                        </div>
+                    </div>
+                    <div class="col-xl-2"></div>
+                </div>
+                <div class="end-footer row">
+                    <div class="col-12">
+                        <div class="separator "></div>
+                        <p class="content-footer" style="text-align: center;">© TriFarm 2022</p>
+                    </div>
+                </div>
+            </div>
+
+
         </div>
     </div>
 </body>
