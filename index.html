@@ -10,13 +10,15 @@
     <link rel="shortcut icon" type="image/png" href=".//assets/img/mybrand/favicon.png">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+
     <link rel="stylesheet" href="./assets/fonts/fontawesome-v6/css/all.min.css">
     <link rel="stylesheet" href="./assets/fonts/remixicon_fonts/remixicon.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
 
     <link rel="stylesheet" href="./assets/css/base.css">
     <link rel="stylesheet" href="./assets/css/main.css">
-    <link rel="stylesheet" href="./assets/css/navbar.css">
+    <link rel="stylesheet" href="./assets/css/header.css">
     <link rel="stylesheet" href="./assets/css/footer.css">
 
 
@@ -293,154 +295,194 @@
         <!-- banner -->
         <div class="banner row g-0">
             <div class="d-none d-md-block col-md-2 col-xl-3"></div>
-            <div class="col-12 col-md-8 col-xl-6">
-                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
-                    <!-- Indicators -->
-                    <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
-                            class="active" aria-current="true" aria-label="Slide 1"></button>
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                            aria-label="Slide 2"></button>
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                            aria-label="Slide 3"></button>
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
-                            aria-label="Slide 4"></button>
+
+            <div class="banner__content col-12 col-md-8 col-xl-6">
+                <img src="./assets/img/banner-img/bgBanner-left.png" class="banner_bg-img-left" alt="">
+
+                <div class="banner-wrapper">
+                    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+                        <!-- Indicators -->
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                                class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                                aria-label="Slide 4"></button>
+                        </div>
+                        <!-- The slideshow -->
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="./assets/img/banner-img/banner1.png" class="banner-img d-block w-100"
+                                    alt="Pic1">
+                                <img src="./assets/img/mybrand/trifarm.png" class="banner__logo" alt="">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./assets/img/banner-img/banner2.png" class="banner-img d-block w-100"
+                                    alt="Pic2">
+                                <img src="./assets/img/mybrand/trifarm.png" class="banner__logo" alt="">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./assets/img/banner-img/banner3.png" class="banner-img d-block w-100"
+                                    alt="Pic3">
+                                <img src="./assets/img/mybrand/trifarm.png" class="banner__logo" alt="">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./assets/img/banner-img/banner4.png" class="banner-img d-block w-100"
+                                    alt="Pic4">
+                                <img src="./assets/img/mybrand/trifarm.png" class="banner__logo" alt="">
+                            </div>
+                        </div>
+                        <!-- Left and right controls -->
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
                     </div>
-                    <!-- The slideshow -->
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="./assets/img/banner1.png" class="d-block w-100" alt="Pic1">
+
+                    <div class="group-item-banner d-none d-md-flex">
+                        <div class="item-banner ">
+                            <img src="./assets/img/banner-img/icon/van.png " alt="" class="icon-item-banner">
+                            <h6 class="text-item-banner">Giao ngay 1h</h6>
                         </div>
-                        <div class="carousel-item">
-                            <img src="./assets/img/banner2.png" class="d-block w-100" alt="Pic2">
+
+                        <div class="item-banner ">
+                            <img src="./assets/img/banner-img/icon/membership.png " alt="" class="icon-item-banner">
+                            <h6 class="text-item-banner">Membership</h6>
                         </div>
-                        <div class="carousel-item">
-                            <img src="./assets/img/banner3.png" class="d-block w-100" alt="Pic3">
+
+                        <div class="item-banner ">
+                            <img src="./assets/img/banner-img/icon/flame.png " alt="" class="icon-item-banner">
+                            <h6 class="text-item-banner">Giá sốc hôm nay</h6>
                         </div>
-                        <div class="carousel-item">
-                            <img src="./assets/img/banner4.png" class="d-block w-100" alt="Pic4">
+
+                        <div class="item-banner ">
+                            <img src="./assets/img/banner-img/icon/cooking.png " alt="" class="icon-item-banner">
+                            <h6 class="text-item-banner">Vào bếp</h6>
+                        </div>
+
+                        <div class="item-banner ">
+                            <img src="./assets/img/banner-img/icon/coupon.png " alt="" class="icon-item-banner">
+                            <h6 class="text-item-banner">Mã giảm giá</h6>
+                        </div>
+
+                        <div class="item-banner ">
+                            <img src="./assets/img/banner-img/icon/news.png " alt="" class="icon-item-banner">
+                            <h6 class="text-item-banner">Tin nông trại</h6>
                         </div>
                     </div>
-                    <!-- Left and right controls -->
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-                        data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-                        data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
                 </div>
 
-                <div class="group-item-banner d-none d-md-block">
-                    <div class="item-banner ">
-                        <img src="./assets/img/banner-item1.png " alt=" " width="40%">
-                        <h6 class="text-item-banner ">Giao ngay 1h</h6>
-                    </div>
-
-                    <div class="item-banner ">
-                        <img src="./assets/img/banner-item2.png " alt=" " width="40%">
-                        <h6 class="text-item-banner ">Hẹn giờ săn deal</h6>
-                    </div>
-
-                    <div class="item-banner ">
-                        <img src="./assets/img/banner-item3.png " alt=" " width="40%">
-                        <h6 class="text-item-banner ">Giá tốt mỗi ngày</h6>
-                    </div>
-
-                    <div class="item-banner ">
-                        <img src="./assets/img/banner-item4.png " alt=" " width="40%">
-                        <h6 class="text-item-banner ">Vào bếp</h6>
-                    </div>
-
-                    <div class="item-banner ">
-                        <img src="./assets/img/banner-item5.png " alt=" " width="40%">
-                        <h6 class="text-item-banner ">Mã giảm giá</h6>
-                    </div>
-
-                    <div class="item-banner ">
-                        <img src="./assets/img/banner-item6.png " alt=" " width="40%">
-                        <h6 class="text-item-banner ">Tin tức mới</h6>
-                    </div>
-                </div>
+                <img src="./assets/img/banner-img/bgBanner-right.png" class="banner_bg-img-right" alt="">
             </div>
             <div class="d-none d-md-block col-md-2 col-xl-3"></div>
-
         </div>
 
-        <!-- sản phẩm -->
-        <div class="list-item-container ">
-            <h3 class="title-list-item ">GIÁ TỐT MỖI NGÀY</h3>
-            <div class="item-container row">
-                <div class="card col-10 col-md-6 col-xl-3" style="width: 18rem; margin: 10px; ">
-                    <img src="https://amthuc.weba.vn/shop/images/amthuc/product/nhophanrang.png " class="card-img-top "
-                        alt="nho phan rang ">
-                    <div class="card-body">
-                        <h5 class="card-title ">Nho xanh Phan Rang</h5>
-                        <h3 class="price-new ">₫98.000</h3>
-                        <h6 class="price "> <del>₫115.000</del></h6>
-                        <br style="clear: both; ">
-                        <p class="card-text ">Cung cấp nhiều vitamin và dưỡng chất tốt cho cơ thể</p>
-                        <a href="product/fruit/xoai_cat_hoa_loc.htm" class="btn btn-success "
-                            style="margin-left: 50%; transform: translateX(-50%)">Mua ngay</a>
-                    </div>
+        <!-- content -->
+        <div class="content__container grid">
+            <h3 class="content__header">
+                <img class="content__header-icon" src="./assets/img/icons/thunder.png" alt="">
+                Giá sốc hôm nay
+            </h3>
+
+            <div class="content__item-list row">
+
+                <div class="col-12 col-md-4 col-xl-2">
+                    <a href="product/fruit/xoai_cat_hoa_loc.htm" class="card">
+                        <img src="https://amthuc.weba.vn/shop/images/amthuc/product/nhophanrang.png "
+                            class="card-img-top" alt="nho phan rang ">
+                        <div class="card-body">
+                            <h5 class="card-title">Nho xanh Phan Rang</h5>
+                            <div class="price">
+                                <p class="price-old"> <del>₫115.000</del></p>
+                                <p class="price-new">₫98.000</p>
+                            </div>
+                            <p class="card-desc">Đã bán 1000+</p>
+                        </div>
+                    </a>
                 </div>
 
-                <div class="card col-10 col-md-6 col-xl-3" style="width: 18rem; margin: 10px; ">
-                    <img src="https://amthuc.weba.vn/shop/images/amthuc/product/thanhlong.png " class="card-img-top "
-                        alt="thanh long ">
-                    <div class="card-body ">
-                        <h5 class="card-title ">Thanh long ruột đỏ</h5>
-                        <h3 class="price-new ">₫28.000</h3>
-                        <h6 class="price "> <del>₫45.000</del></h6>
-                        <br style="clear: both; ">
-                        <p class="card-text ">Cung cấp nhiều vitamin và dưỡng chất tốt cho cơ thể</p>
-                        <a href="product/fruit/xoai_cat_hoa_loc.htm" class="btn btn-success "
-                            style="margin-left: 50%; transform: translateX(-50%)">Mua ngay</a>
-                    </div>
+                <div class="col-12 col-md-4 col-xl-2">
+                    <a href="product/fruit/xoai_cat_hoa_loc.htm" class="card">
+                        <img src="https://amthuc.weba.vn/shop/images/amthuc/product/nhophanrang.png "
+                            class="card-img-top" alt="nho phan rang ">
+                        <div class="card-body">
+                            <h5 class="card-title">Nho xanh Phan Rang</h5>
+                            <div class="price">
+                                <p class="price-old"> <del>₫115.000</del></p>
+                                <p class="price-new">₫98.000</p>
+                            </div>
+                            <p class="card-desc">Đã bán 1000+</p>
+                        </div>
+                    </a>
                 </div>
 
-                <div class="card col-10 col-md-6 col-xl-3" style="width: 18rem; margin: 10px; ">
-                    <img src="https://amthuc.weba.vn/shop/images/amthuc/product/xoaikeo.png " class="card-img-top "
-                        alt="xoai ">
-                    <div class="card-body ">
-                        <h5 class="card-title ">Xoài cát Hòa Lộc</h5>
-                        <h3 class="price-new ">₫18.000</h3>
-                        <h6 class="price "> <del>₫23.000</del></h6>
-                        <br style="clear: both; ">
-                        <p class="card-text ">Cung cấp nhiều vitamin và dưỡng chất tốt cho cơ thể</p>
-                        <a href="product/fruit/xoai_cat_hoa_loc.htm" class="btn btn-success buy-btn">Mua ngay</a>
-                    </div>
+                <div class="col-12 col-md-4 col-xl-2">
+                    <a href="product/fruit/xoai_cat_hoa_loc.htm" class="card">
+                        <img src="https://amthuc.weba.vn/shop/images/amthuc/product/thanhlong.png " class="card-img-top"
+                            alt="thanh long ">
+                        <div class="card-body ">
+                            <h5 class="card-title">Thanh long ruột đỏ</h5>
+                            <div class="price">
+                                <p class="price-old"> <del>₫45.000</del></p>
+                                <p class="price-new">₫28.000</p>
+                            </div>
+                            <p class="card-desc">Đã bán 1000+</p>
+                        </div>
+                    </a>
                 </div>
 
-                <div class="card col-10 col-md-6 col-xl-3" style="width: 18rem; margin: 10px; ">
-                    <img src="https://amthuc.weba.vn/shop/images/amthuc/product/dua%20gang.png " class="card-img-top "
-                        alt="dua gang ">
-                    <div class="card-body ">
-                        <h5 class="card-title ">Dưa gang Trung Quốc</h5>
-                        <h3 class="price-new ">₫26.000</h3>
-                        <h6 class="price "> <del>₫29.000</del></h6>
-                        <br style="clear: both; ">
-                        <p class="card-text ">Cung cấp nhiều vitamin và dưỡng chất tốt cho cơ thể</p>
-                        <a href="product/fruit/xoai_cat_hoa_loc.htm" class="btn btn-success "
-                            style="margin-left: 50%; transform: translateX(-50%)">Mua ngay</a>
-                    </div>
+                <div class="col-12 col-md-4 col-xl-2">
+                    <a href="product/fruit/xoai_cat_hoa_loc.htm" class="card">
+                        <img src="https://amthuc.weba.vn/shop/images/amthuc/product/xoaikeo.png" class="card-img-top"
+                            alt="xoai ">
+                        <div class="card-body ">
+                            <h5 class="card-title">Xoài cát Hòa Lộc</h5>
+                            <div class="price">
+                                <p class="price-old"> <del>₫23.000</del></p>
+                                <p class="price-new">₫18.000</p>
+                            </div>
+                            <p class="card-desc">Đã bán 1000+</p>
+                        </div>
+                    </a>
                 </div>
 
-                <div class="card col-10 col-md-6 col-xl-3" style="width: 18rem; margin: 10px; ">
-                    <img src="https://amthuc.weba.vn/shop/images/amthuc/product/nhophanrang.png " class="card-img-top "
-                        alt="nho ninh thuan ">
-                    <div class="card-body ">
-                        <h5 class="card-title ">Nho tròn Ninh Thuận</h5>
-                        <h3 class="price-new ">₫63.000</h3>
-                        <h6 class="price "> <del>₫88.000</del></h6>
-                        <br style="clear: both; ">
-                        <p class="card-text ">Cung cấp nhiều vitamin và dưỡng chất tốt cho cơ thể</p>
-                        <a href="product/fruit/xoai_cat_hoa_loc.htm" class="btn btn-success "
-                            style="margin-left: 50%; transform: translateX(-50%)">Mua ngay</a>
-                    </div>
+                <div class="col-12 col-md-4 col-xl-2">
+                    <a href="product/fruit/xoai_cat_hoa_loc.htm" class="card">
+                        <img src="https://amthuc.weba.vn/shop/images/amthuc/product/dua%20gang.png "
+                            class="card-img-top" alt="dua gang ">
+                        <div class="card-body ">
+                            <h5 class="card-title">Dưa gang Trung Quốc</h5>
+                            <div class="price">
+                                <p class="price-old"> <del>₫29.000</del></p>
+                                <p class="price-new">₫26.000</p>
+                            </div>
+                            <p class="card-desc">Đã bán 1000+</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-12 col-md-4 col-xl-2">
+                    <a href="product/fruit/xoai_cat_hoa_loc.htm" class="card">
+                        <img src="https://amthuc.weba.vn/shop/images/amthuc/product/nhophanrang.png "
+                            class="card-img-top" alt="nho ninh thuan ">
+                        <div class="card-body ">
+                            <h5 class="card-title">Nho tròn Ninh Thuận</h5>
+                            <div class="price">
+                                <p class="price-old"> <del>₫88.000</del></p>
+                                <p class="price-new">₫63.000</p>
+                            </div>
+                            <p class="card-desc">Đã bán 1000+</p>
+                        </div>
+                    </a>
                 </div>
             </div>
 
@@ -720,12 +762,16 @@
                             </a>
                         </div>
 
-                        <p class="footer-info__note">TriFarm nhận đặt hàng trực tuyến và giao hàng tận nơi, chưa hỗ trợ
+                        <p class="footer-info__note">TriFarm nhận đặt hàng trực tuyến và giao hàng tận nơi, chưa hỗ
+                            trợ
                             mua và nhận hàng trực tiếp tại văn phòng hoặc trung tâm xử lý đơn hàng</p>
-                        <p class="footer-info__address">Trụ sở chính: Tầng 12 Tòa nhà IFC One Saigon, Số 34, đường Tôn
+                        <p class="footer-info__address">Trụ sở chính: Tầng 12 Tòa nhà IFC One Saigon, Số 34, đường
+                            Tôn
                             Đức Thắng, phường Bến Nghé, quận 1, Thành phố Hồ Chí Minh, Việt Nam</p>
-                        <p class="footer-info__certificate">Giấy chứng nhận Đăng ký Kinh doanh số 0309438156 do Sở Kế
-                            hoạch và Đầu tư Thành phố Hồ Chí Minh cấp lần đầu ngày 12/01/2019 và sửa đổi lần thứ 3 ngày
+                        <p class="footer-info__certificate">Giấy chứng nhận Đăng ký Kinh doanh số 0309438156 do Sở
+                            Kế
+                            hoạch và Đầu tư Thành phố Hồ Chí Minh cấp lần đầu ngày 12/01/2019 và sửa đổi lần thứ 3
+                            ngày
                             14/08/2022</p>
                         <p class="footer-info__copyright">© 2022 - Bản quyền thuộc về Công ty TNHH Mich</p>
                     </div>
