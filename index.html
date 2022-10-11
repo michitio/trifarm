@@ -2,84 +2,293 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta content='width=device-width, initial-scale=1' name='viewport' />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>TriFarm - Nông sản xanh</title>
-
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/fonts/themify-icons/themify-icons.css">
+    <title>TriFarm - Nông trại xanh</title>
+    <link rel="shortcut icon" type="image/png" href=".//assets/img/mybrand/favicon.png">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="./assets/fonts/fontawesome-v6/css/all.min.css">
+    <link rel="stylesheet" href="./assets/fonts/remixicon_fonts/remixicon.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
 
-    <link rel="shortcut icon" type="image/png" href=".//assets/img/mybrand/3-favicon.png">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/navbar.css">
+    <link rel="stylesheet" href="./assets/css/footer.css">
 
-    <!-- <script src="script.js"></script> -->
+
 </head>
 
 <body>
     <div class="main container-fluid" style="padding: 0;">
         <!-- menu -->
-        <nav class="header navbar navbar-expand-lg navbar-dark " style="position: fixed; z-index: 2;">
-            <div class="container-fluid" style="background-color: rgb(0, 168, 72);">
-                <a class="navbar-brand" href="#">
-                    <img src="./assets/img/mybrand/logo.png" height="40px">
-                </a>
+        <div class="header">
+            <div class="grid">
+                <nav class="navbar">
+                    <ul class="navbar__list">
+                        <!-- qr header -->
+                        <li class="white-text-hover navbar__item navbar__item-qr">
+                            <span class="">Tải ứng dụng</span>
+                            <div class="navbar__qr">
+                                <img class="navbar__qr-img" src="assets/img/downloads-app/qr-download-app.png"
+                                    alt="qr-download-app">
+                                <div class="navbar__qr-app">
+                                    <a href="#" class="navbar__qr-link">
+                                        <img class="navbar__qr-app-img" src="assets/img/downloads-app/app-store.png"
+                                            alt="app-store">
+                                    </a>
+                                    <a href="#" class="navbar__qr-link">
+                                        <img class="navbar__qr-app-img" src="assets/img/downloads-app/google-play.png"
+                                            alt="google-play">
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- kết nối header -->
+                        <li class="navbar__item">
+                            <span class="anti-opacity-hover" style="margin-right: 4px;">Kết nối</span>
+                            <i class="opacity-hover navbar__icon fa-brands fa-square-facebook"></i>
+                            <i class="opacity-hover navbar__icon fa-brands fa-facebook-messenger"></i>
+                        </li>
+                    </ul>
 
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+                    <ul class="navbar__list">
 
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Danh mục sản phẩm</a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Trái cây</a></li>
-                                <li><a class="dropdown-item" href="#">Rau củ</a></li>
-                                <li><a class="dropdown-item" href="#">Trứng</a></li>
-                                <li><a class="dropdown-item" href="#">Gạo, mì</a></li>
-                                <li><a class="dropdown-item" href="#">Trà, Cà phê</a></li>
-                                <li><a class="dropdown-item" href="#">Bơ, Sữa, Pho mát</a></li>
-                                <li><a class="dropdown-item" href="#">Trái cây khô, Mứt</a></li>
+                        <!-- noti header -->
+                        <li class="white-text-hover navbar__item navbar__item-noti">
+
+                            <div class="">
+                                <i class="navbar__icon fa-solid fa-bell"></i>
+                                <span class="">Thông báo</span>
+                            </div>
+
+                            <div class="navbar__notify">
+                                <div class="anti-cursor-hover navbar__notify-header">Thông báo mới nhận</div>
+                                <ul class="navbar__notify-list">
+                                    <li class="navbar__notify-item">
+                                        <a href="" class="navbar__notify-link">
+                                            <img src="./assets/img/noti/hot-sale.png" alt="" class="navbar__notify-img">
+                                            <div class="navbar__notify-info">
+                                                <p class="navbar__notify-title">Sale 50% sản phẩm bạn có thể cần</p>
+                                                <p class="navbar__notify-content">Sổ tay, áo phông, balo thời trang. Món
+                                                    gì cũng có, gì cũng rẻ.</p>
+                                            </div>
+                                        </a>
+                                    </li>
+
+                                    <li class="navbar__notify-item">
+                                        <a href="" class="navbar__notify-link">
+                                            <img src="./assets/img/noti/chat.png" alt="" class="navbar__notify-img">
+                                            <div class="navbar__notify-info">
+                                                <p class="navbar__notify-title">TriFarm mách bạn</p>
+                                                <p class="navbar__notify-content">Sản phẩm bạn thích đang giảm sốc! Mua
+                                                    sắm ngay!</p>
+                                            </div>
+                                        </a>
+                                    </li>
+
+                                    <li class="navbar__notify-item">
+                                        <a href="" class="navbar__notify-link">
+                                            <img src="./assets/img/noti/coupon.png" alt="" class="navbar__notify-img">
+                                            <div class="navbar__notify-info">
+                                                <p class="navbar__notify-title">Sale giữa tháng sắp đến cùng 4 voucher
+                                                    hot</p>
+                                                <p class="navbar__notify-content">Lưu sớm voucher 15k đơn từ 99k. Săn
+                                                    ngay voucher 800k đơn từ 2 triệu. Lưu nhanh voucher, săn deal cực
+                                                    rẻ!</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <div class="opacity-hover navbar__notify-footer">
+                                    <a href="" class="navbar__notify-footer-link">
+                                        Xem tất cả
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="opacity-hover navbar__item">
+                            <i class="navbar__icon fa-sharp fa-solid fa-circle-question"></i>
+                            Hỗ trợ
+                        </li>
+
+                        <li class="sign_up navbar__sign white-text-hover navbar__item navbar__item--sepa f-weight-500">
+                            Đăng ký</li>
+                        <li class="sign_in navbar__sign white-text-hover navbar__item f-weight-500">Đăng nhập</li>
+
+                        <li class="white-text-hover navbar__user navbar__item">
+                            <img src="./assets/img/avt-user/blue.png" alt="" class="navbar__user-avt">
+                            <span class="navbar__user-name">Nguyễn Như Trung</span>
+
+                            <ul class="navbar__user-menu">
+                                <li class="dark-hover navbar__user-item"><a href="">Tài khoản</a></li>
+                                <li class="dark-hover navbar__user-item"><a href="">Đơn mua</a></li>
+                                <li class="dark-hover navbar__user-item navbar__user-item-sepa"><a href="">Đăng xuất</a>
+                                </li>
                             </ul>
                         </li>
 
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Tin tức</a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Về TriFarm</a>
-                        </li>
-
                     </ul>
-                    <div class="search-box col-xl-4 d-md-none d-xl-block">
-                        <form class=" d-flex " role="search">
-                            <input class="form-control me-2" type="search" placeholder="Tìm sản phẩm" aria-label="Search">
-                            <button class="btn btn-outline-success" style="width: 200px; color: white;" type="submit">Tìm kiếm</button>
-                        </form>
+                </nav>
+
+                <!-- header-with-search -->
+                <div class="header-with-search">
+                    <div class="header__logo">
+                        <a href="/" class="header__logo-link">
+                            <img class="header__logo-img" src="./assets/img/mybrand/trifarm.png" alt="TriFarm">
+                        </a>
                     </div>
 
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="margin-left: 8%;">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Đăng nhập</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Đăng ký</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">
-                                <i class="ti-shopping-cart" style="font-size: 32px;"></i>
-                            </a>
-                        </li>
-                    </ul>
+                    <div class="header__search">
+                        <div class="search__input-wraper">
+                            <input class="search__input"
+                                placeholder="Tìm sản phẩm, danh mục hay thương hiệu mong muốn ..." type="text">
+
+                            <!-- search history -->
+                            <div class="header__search-history">
+                                <p class="header__search-history-title">Lịch sử tìm kiếm</p>
+                                <ul class="header__search-history-list">
+                                    <li class="dark-hover header__search-history-item">
+                                        <a href="">Ốp lưng điện thoại</a>
+                                    </li>
+                                    <li class="dark-hover header__search-history-item">
+                                        <a href="">Balo đi học</a>
+                                    </li>
+                                    <li class="dark-hover header__search-history-item">
+                                        <a href="">Sáp vuốt tóc</a>
+                                    </li>
+                                    <li class="dark-hover header__search-history-item">
+                                        <a href="">Quần baggy kaki</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- end history -->
+                        </div>
+
+                        <div class="primary-bg-hover search__btn btn--primary btn">
+                            <i class=" search__icon ri-search-line"></i>
+                        </div>
+                    </div>
+                    <div class="header__cart">
+                        <div class="cursor-hover header__cart-wrap">
+                            <img class="cart__icon" src="./assets/img/icons/cart.png" alt="">
+                            <span class="cart__number">3</span>
+
+                            <div class="cart__list--noitem">
+                                <div class="anti-opacity-hover cart__list--noitem-wrap cart__list">
+                                    <img class="cart__list--noitem-img" src="./assets/img/cart-empty3.png" alt="">
+                                    <p class="cart__list--noitem-content">Chưa có sản phẩm</p>
+                                </div>
+                            </div>
+
+                            <div class="cart__list--haveitem">
+                                <div class="anti-cursor-hover cart__list">
+                                    <p class="anti-cursor-hover cart__list-header">Sản phẩm đã thêm</p>
+
+                                    <ul class="dark-hover cart__list--item">
+                                        <!-- cart item -->
+                                        <li class="cart__item">
+                                            <img class="cart__item-img" src="./assets/img/product-cart/product1.png"
+                                                alt="">
+                                            <div class="cart__item-info">
+                                                <div class="cart__item-row">
+                                                    <p class="cart__item-name">Ốp Điện Thoại iPhone 14 14 Plus 14 Pro 14
+                                                        Pro MAX</p>
+                                                    <div class="cart__item-price-wraper">
+                                                        <span class="cart__item-price">53.000đ</span>
+                                                        <span class="cart__item-multi">x</span>
+                                                        <span class="cart__item-qnt">2</span>
+                                                    </div>
+                                                </div>
+                                                <div class="cart__item-row">
+                                                    <span class="cart__item-description">Phân loại: iPhone 14 Pro</span>
+                                                    <span class="cart__item-remove">Xóa</span>
+                                                </div>
+
+                                            </div>
+                                        </li>
+
+                                        <!-- cart item -->
+                                        <li class="cart__item">
+                                            <img class="cart__item-img" src="./assets/img/product-cart/product2.png"
+                                                alt="">
+                                            <div class="cart__item-info">
+                                                <div class="cart__item-row">
+                                                    <p class="cart__item-name">Balo ULZZANG Basic Chống Nước (tặng kèm
+                                                        sticker cài balo)</p>
+                                                    <div class="cart__item-price-wraper">
+                                                        <span class="cart__item-price">139.000đ</span>
+                                                        <span class="cart__item-multi">x</span>
+                                                        <span class="cart__item-qnt">1</span>
+                                                    </div>
+                                                </div>
+                                                <div class="cart__item-row">
+                                                    <span class="cart__item-description">Phân loại: Đen, L (41cm)</span>
+                                                    <span class="cart__item-remove">Xóa</span>
+                                                </div>
+
+                                            </div>
+                                        </li>
+
+                                        <!-- cart item -->
+                                        <li class="cart__item">
+                                            <img class="cart__item-img" src="./assets/img/product-cart/product3.png"
+                                                alt="">
+                                            <div class="cart__item-info">
+                                                <div class="cart__item-row">
+                                                    <p class="cart__item-name">Quần Kaki Baggy Unisex </p>
+                                                    <div class="cart__item-price-wraper">
+                                                        <span class="cart__item-price">105.000đ</span>
+                                                        <span class="cart__item-multi">x</span>
+                                                        <span class="cart__item-qnt">2</span>
+                                                    </div>
+                                                </div>
+                                                <div class="cart__item-row">
+                                                    <span class="cart__item-description">Phân loại: Tan (Be), L</span>
+                                                    <span class="cart__item-remove">Xóa</span>
+                                                </div>
+
+                                            </div>
+                                        </li>
+
+                                        <!-- cart item -->
+                                        <li class="cart__item">
+                                            <img class="cart__item-img" src="./assets/img/product-cart/product4.png"
+                                                alt="">
+                                            <div class="cart__item-info">
+                                                <div class="cart__item-row">
+                                                    <p class="cart__item-name">Sáp vuốt tóc nam Blumaan Tạo Kiểu Tóc,
+                                                        Giữ Nếp Tóc Cực Tốt</p>
+                                                    <div class="cart__item-price-wraper">
+                                                        <span class="cart__item-price">279.000đ</span>
+                                                        <span class="cart__item-multi">x</span>
+                                                        <span class="cart__item-qnt">1</span>
+                                                    </div>
+                                                </div>
+                                                <div class="cart__item-row">
+                                                    <span class="cart__item-description">Phân loại: Meraki</span>
+                                                    <span class="cart__item-remove">Xóa</span>
+                                                </div>
+
+                                            </div>
+                                        </li>
+                                    </ul>
+
+                                    <a class="primary-bg-hover cart__list--view btn--primary btn">Xem giỏ hàng</a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
                 </div>
             </div>
-        </nav>
+        </div>
+
+        <div class="replace-header"></div>
 
         <!-- banner -->
         <div class="banner row g-0">
@@ -88,10 +297,14 @@
                 <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
                     <!-- Indicators -->
                     <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                            aria-label="Slide 4"></button>
                     </div>
                     <!-- The slideshow -->
                     <div class="carousel-inner">
@@ -109,13 +322,15 @@
                         </div>
                     </div>
                     <!-- Left and right controls -->
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                      <span class="visually-hidden">Previous</span>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
                     </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                      <span class="visually-hidden">Next</span>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
                     </button>
                 </div>
 
@@ -160,31 +375,36 @@
             <h3 class="title-list-item ">GIÁ TỐT MỖI NGÀY</h3>
             <div class="item-container row">
                 <div class="card col-10 col-md-6 col-xl-3" style="width: 18rem; margin: 10px; ">
-                    <img src="https://amthuc.weba.vn/shop/images/amthuc/product/nhophanrang.png " class="card-img-top " alt="nho phan rang ">
+                    <img src="https://amthuc.weba.vn/shop/images/amthuc/product/nhophanrang.png " class="card-img-top "
+                        alt="nho phan rang ">
                     <div class="card-body">
                         <h5 class="card-title ">Nho xanh Phan Rang</h5>
                         <h3 class="price-new ">₫98.000</h3>
                         <h6 class="price "> <del>₫115.000</del></h6>
                         <br style="clear: both; ">
                         <p class="card-text ">Cung cấp nhiều vitamin và dưỡng chất tốt cho cơ thể</p>
-                        <a href="product/fruit/xoai_cat_hoa_loc.htm" class="btn btn-success " style="margin-left: 50%; transform: translateX(-50%)">Mua ngay</a>
+                        <a href="product/fruit/xoai_cat_hoa_loc.htm" class="btn btn-success "
+                            style="margin-left: 50%; transform: translateX(-50%)">Mua ngay</a>
                     </div>
                 </div>
 
                 <div class="card col-10 col-md-6 col-xl-3" style="width: 18rem; margin: 10px; ">
-                    <img src="https://amthuc.weba.vn/shop/images/amthuc/product/thanhlong.png " class="card-img-top " alt="thanh long ">
+                    <img src="https://amthuc.weba.vn/shop/images/amthuc/product/thanhlong.png " class="card-img-top "
+                        alt="thanh long ">
                     <div class="card-body ">
                         <h5 class="card-title ">Thanh long ruột đỏ</h5>
                         <h3 class="price-new ">₫28.000</h3>
                         <h6 class="price "> <del>₫45.000</del></h6>
                         <br style="clear: both; ">
                         <p class="card-text ">Cung cấp nhiều vitamin và dưỡng chất tốt cho cơ thể</p>
-                        <a href="product/fruit/xoai_cat_hoa_loc.htm" class="btn btn-success " style="margin-left: 50%; transform: translateX(-50%)">Mua ngay</a>
+                        <a href="product/fruit/xoai_cat_hoa_loc.htm" class="btn btn-success "
+                            style="margin-left: 50%; transform: translateX(-50%)">Mua ngay</a>
                     </div>
                 </div>
 
                 <div class="card col-10 col-md-6 col-xl-3" style="width: 18rem; margin: 10px; ">
-                    <img src="https://amthuc.weba.vn/shop/images/amthuc/product/xoaikeo.png " class="card-img-top " alt="xoai ">
+                    <img src="https://amthuc.weba.vn/shop/images/amthuc/product/xoaikeo.png " class="card-img-top "
+                        alt="xoai ">
                     <div class="card-body ">
                         <h5 class="card-title ">Xoài cát Hòa Lộc</h5>
                         <h3 class="price-new ">₫18.000</h3>
@@ -196,88 +416,328 @@
                 </div>
 
                 <div class="card col-10 col-md-6 col-xl-3" style="width: 18rem; margin: 10px; ">
-                    <img src="https://amthuc.weba.vn/shop/images/amthuc/product/dua%20gang.png " class="card-img-top " alt="dua gang ">
+                    <img src="https://amthuc.weba.vn/shop/images/amthuc/product/dua%20gang.png " class="card-img-top "
+                        alt="dua gang ">
                     <div class="card-body ">
                         <h5 class="card-title ">Dưa gang Trung Quốc</h5>
                         <h3 class="price-new ">₫26.000</h3>
                         <h6 class="price "> <del>₫29.000</del></h6>
                         <br style="clear: both; ">
                         <p class="card-text ">Cung cấp nhiều vitamin và dưỡng chất tốt cho cơ thể</p>
-                        <a href="product/fruit/xoai_cat_hoa_loc.htm" class="btn btn-success " style="margin-left: 50%; transform: translateX(-50%)">Mua ngay</a>
+                        <a href="product/fruit/xoai_cat_hoa_loc.htm" class="btn btn-success "
+                            style="margin-left: 50%; transform: translateX(-50%)">Mua ngay</a>
                     </div>
                 </div>
 
                 <div class="card col-10 col-md-6 col-xl-3" style="width: 18rem; margin: 10px; ">
-                    <img src="https://amthuc.weba.vn/shop/images/amthuc/product/nhophanrang.png " class="card-img-top " alt="nho ninh thuan ">
+                    <img src="https://amthuc.weba.vn/shop/images/amthuc/product/nhophanrang.png " class="card-img-top "
+                        alt="nho ninh thuan ">
                     <div class="card-body ">
                         <h5 class="card-title ">Nho tròn Ninh Thuận</h5>
                         <h3 class="price-new ">₫63.000</h3>
                         <h6 class="price "> <del>₫88.000</del></h6>
                         <br style="clear: both; ">
                         <p class="card-text ">Cung cấp nhiều vitamin và dưỡng chất tốt cho cơ thể</p>
-                        <a href="product/fruit/xoai_cat_hoa_loc.htm" class="btn btn-success " style="margin-left: 50%; transform: translateX(-50%)">Mua ngay</a>
+                        <a href="product/fruit/xoai_cat_hoa_loc.htm" class="btn btn-success "
+                            style="margin-left: 50%; transform: translateX(-50%)">Mua ngay</a>
                     </div>
                 </div>
             </div>
 
         </div>
 
-        <div class="footer ">
-            <div class="row block-footer-container">
-                <div class="row">
-                    <div class="col-xl-2"></div>
-                    <div class="block-footer  col-12 col-md-4 col-xl-2">
-                        <h6>Hỗ trợ khách hàng</h6>
-                        <p class="content-footer ">Các câu hỏi thường gặp</p>
-                        <p class="content-footer ">Chính sách đổi trả</p>
-                        <p class="content-footer ">Hướng dẫn đặt hàng</p>
-                        <p class="content-footer ">Phương thức vận chuyển</p>
-                        <p class="content-footer ">Chính sách hàng nhập khẩu</p>
+        <div class="footer">
+            <div class="grid">
+                <div class="footer__first-row grid__row grid__row__anti-gutter">
+                    <div class="grid__col-auto grid__col">
+                        <h3 class="footer__heading">Hỗ trợ khách hàng</h3>
+                        <ul class="footer-list">
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">Các câu hỏi thường gặp</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">Gửi yêu cầu hỗ trợ</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">Hướng dẫn đặt hàng</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">Hướng dẫn bán hàng</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">Phương thức vận chuyển</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">Tổng đài hỗ trợ: 1900 5555</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">Hỗ trợ khách hàng: hotro@trifarm.vn</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">Báo lỗi bảo mật: security@trifarm.vn</a>
+                            </li>
+                        </ul>
                     </div>
 
-                    <div class="block-footer  col-12 col-md-4 col-xl-2">
-                        <h6>Kết nối với TriFarm</h6>
-                        <p class="content-footer ">Facebook: facebook.com/trifarmvn</p>
-                        <p class="content-footer ">Youtube: youtube.com/user/TriFarmVN</p>
-                        <p class="content-footer ">Hotline: 1900-6035</p>
-                        <p class="content-footer ">Email: hotro@trifarm.epizy.com</p>
-                        <p class="content-footer ">Báo lỗi bảo mật: security@trifarm.epizy.com</p>
+
+                    <div class="grid__col-auto grid__col">
+                        <h3 class="footer__heading">Về TriFarm</h3>
+                        <ul class="footer-list">
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">Giới thiệu TriFarm</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">Quy chế hoạt động Sàn GDTMĐT</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">Tuyển dụng</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">Điều khoản sử dụng</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">Chính sách bảo mật</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">Chính sách đổi trả</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">Chính sách giải quyết khiếu nại</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">Kênh Người Bán</a>
+                            </li>
+                        </ul>
                     </div>
 
-                    <div class="block-footer  col-12 d-none d-xl-block col-xl-2">
-                        <h6>Về TriFarm</h6>
-                        <p class="content-footer ">Giới thiệu TriFarm</p>
-                        <p class="content-footer ">Tuyển dụng</p>
-                        <p class="content-footer ">Chính sách bảo mật</p>
-                        <p class="content-footer ">Chính sách giải quyết khiếu nại</p>
-                        <p class="content-footer ">Điều khoản sử dụng</p>
-                        <p class="content-footer ">Bán hàng doanh nghiệp</p>
-                        <p class="content-footer ">Điều kiện vận chuyển</p>
-                    </div>
 
-                    <div class="block-footer d-none d-md-block col-md-4 col-xl-2">
-                        <div style="margin-bottom: 30px; ">
-                            <h6>Dịch vụ giao hàng</h6>
-                            <img src="./assets/img/TriNOW Logo.png " height="48px ">
+                    <div class="grid__col-auto grid__col">
+                        <h3 class="footer__heading">Phương thức thanh toán</h3>
+
+                        <div class="footer-payment__row grid__row grid__row__anti-gutter">
+                            <div class="grid__col-auto grid__col">
+                                <a href="" class="footer-payment__link footer-item__link">
+                                    <img class="footer-payment__img" src="./assets/img/payment/visa.png" alt="">
+                                </a>
+                            </div>
+
+                            <div class="grid__col-auto grid__col">
+                                <a href="" class="footer-payment__link footer-item__link">
+                                    <img class="footer-payment__img" src="./assets/img/payment/mastercard.png" alt="">
+                                </a>
+                            </div>
+
+                            <div class="grid__col-auto grid__col">
+                                <a href="" class="footer-payment__link footer-item__link">
+                                    <img class="footer-payment__img" src="./assets/img/payment/jcb.png" alt="">
+                                </a>
+                            </div>
+
+                            <div class="grid__col-auto grid__col">
+                                <a href="" class="footer-payment__link footer-item__link">
+                                    <img class="footer-payment__img" src="./assets/img/payment/atm.png" alt="">
+                                </a>
+                            </div>
+
+                            <div class="grid__col-auto grid__col">
+                                <a href="" class="footer-payment__link footer-item__link">
+                                    <img class="footer-payment__img" src="./assets/img/payment/momo.png" alt="">
+                                </a>
+                            </div>
                         </div>
-                        <div style="margin-bottom: 30px; ">
-                            <h6>Chứng nhận bởi</h6>
-                            <img src="./assets/img/logoSaleNoti.png " height="48px ">
+
+                        <div class="footer-payment__row grid__row grid__row__anti-gutter">
+                            <div class="grid__col-auto grid__col">
+                                <a href="" class="footer-payment__link footer-item__link">
+                                    <img class="footer-payment__img" src="./assets/img/payment/zalopay.png" alt="">
+                                </a>
+                            </div>
+
+                            <div class="grid__col-auto grid__col">
+                                <a href="" class="footer-payment__link footer-item__link">
+                                    <img class="footer-payment__img" src="./assets/img/payment/moca.png" alt="">
+                                </a>
+                            </div>
+
+                            <div class="grid__col-auto grid__col">
+                                <a href="" class="footer-payment__link footer-item__link">
+                                    <img class="footer-payment__img" src="./assets/img/payment/viettelpay.png" alt="">
+                                </a>
+                            </div>
+
+                            <div class="grid__col-auto grid__col">
+                                <a href="" class="footer-payment__link footer-item__link">
+                                    <img class="footer-payment__img" src="./assets/img/payment/vnpay.png" alt="">
+                                </a>
+                            </div>
+
+                            <div class="grid__col-auto grid__col">
+                                <a href="" class="footer-payment__link footer-item__link">
+                                    <img class="footer-payment__img" src="./assets/img/payment/shopeepay.png" alt="">
+                                </a>
+                            </div>
+
+                        </div>
+
+                        <div class="footer-payment__row grid__row grid__row__anti-gutter">
+                            <div class="grid__col-auto grid__col">
+                                <a href="" class="footer-payment__link footer-item__link">
+                                    <img class="footer-payment__img" src="./assets/img/payment/cash.png" alt="">
+                                </a>
+                            </div>
+
+                            <div class="grid__col-auto grid__col">
+                            </div>
+
+                            <div class="grid__col-auto grid__col">
+                            </div>
+
+                            <div class="grid__col-auto grid__col">
+                            </div>
+
+                            <div class="grid__col-auto grid__col">
+                            </div>
+
                         </div>
                     </div>
-                    <div class="col-xl-2"></div>
+
+
+                    <div class="grid__col-auto grid__col">
+                        <h3 class="footer__heading">Đơn vị vận chuyển</h3>
+
+                        <div class="footer-shipper__row grid__row grid__row__anti-gutter">
+                            <div class="grid__col-auto grid__col">
+                                <a href="" class="footer-payment__link footer-item__link">
+                                    <img class="footer-payment__img" src="./assets/img/mybrand/triexpress.png" alt="">
+                                </a>
+                            </div>
+
+                            <div class="grid__col-auto grid__col">
+                                <a href="" class="footer-payment__link footer-item__link">
+                                    <img class="footer-payment__img" src="./assets/img/shipper/ghtk.png" alt="">
+                                </a>
+                            </div>
+
+                            <div class="grid__col-auto grid__col">
+                                <a href="" class="footer-payment__link footer-item__link">
+                                    <img class="footer-payment__img" src="./assets/img/shipper/ghn.png" alt="">
+                                </a>
+                            </div>
+
+                            <div class="grid__col-auto grid__col">
+                                <a href="" class="footer-payment__link footer-item__link">
+                                    <img class="footer-payment__img" src="./assets/img/shipper/viettel-post.png" alt="">
+                                </a>
+                            </div>
+
+                        </div>
+
+                        <div class="footer-shipper__row grid__row grid__row__anti-gutter">
+                            <div class="grid__col-auto grid__col">
+                                <a href="" class="footer-shipper__link footer-item__link">
+                                    <img class="footer-shipper__img" src="./assets/img/shipper/vn-post.png" alt="">
+                                </a>
+                            </div>
+
+                            <div class="grid__col-auto grid__col">
+                                <a href="" class="footer-shipper__link footer-item__link">
+                                    <img class="footer-shipper__img" src="./assets/img/shipper/jnt-express.png" alt="">
+                                </a>
+                            </div>
+
+                            <div class="grid__col-auto grid__col">
+                                <a href="" class="footer-shipper__link footer-item__link">
+                                    <img class="footer-shipper__img" src="./assets/img/shipper/ninja-van.png" alt="">
+                                </a>
+                            </div>
+
+                            <div class="grid__col-auto grid__col">
+                                <a href="" class="footer-shipper__link footer-item__link">
+                                    <img class="footer-shipper__img" src="./assets/img/shipper/best-express.png" alt="">
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                    <div class="grid__col-auto grid__col">
+                        <h3 class="footer__heading">Kết nối với chúng tôi</h3>
+                        <ul class="footer-list">
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">
+                                    <i class="footer-item__social-icon ri-facebook-circle-fill"></i>
+                                    <div class="footer-item__social-content">Facebook</div>
+                                </a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">
+                                    <i class="footer-item__social-icon ri-instagram-fill"></i>
+                                    <div class="footer-item__social-content">Instagram</div>
+                                </a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">
+                                    <i class="footer-item__social-icon ri-youtube-fill"></i>
+                                    <div class="footer-item__social-content">Youtube</div>
+                                </a>
+                            </li>
+                        </ul>
+
+                        <div class="footer__separate"></div>
+
+                        <h3 class="footer__heading">Tải ứng dụng trên điện thoại</h3>
+                        <div class="footer__download">
+                            <img class="footer__download-app-qr" src="./assets/img/downloads-app/qr-download-app.png"
+                                alt="qr-download-app">
+                            <div class="footer__download-app">
+                                <a href="" class="footer__download-app__link">
+                                    <img class="footer__download-app-img" src="./assets/img/downloads-app/app-store.png"
+                                        alt="app-store">
+                                </a>
+                                <a href="" class="footer__download-app__link">
+                                    <img class="footer__download-app-img"
+                                        src="./assets/img/downloads-app/google-play.png" alt="google-play">
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
                 </div>
-                <div class="end-footer row">
-                    <div class="col-12">
-                        <div class="separator "></div>
-                        <p class="content-footer" style="text-align: center;">© TriFarm 2022</p>
+
+                <div class="grid__row grid__row__anti-gutter">
+                    <div class="footer-info">
+                        <h3 class="footer__heading">Chứng nhận bởi</h3>
+                        <div class="footer-info__certificate-wraper">
+                            <a href="" class="footer-shipper__link footer-item__link">
+                                <img class="footer-info__certificate-img"
+                                    src="./assets/img/footer-certi/bo-cong-thuong.png" alt="">
+                            </a>
+
+                            <a href="" class="footer-shipper__link footer-item__link">
+                                <img class="footer-info__certificate-img"
+                                    src="./assets/img/footer-certi/bo-cong-thuong-2.png" alt="">
+                            </a>
+                        </div>
+
+                        <p class="footer-info__note">TriFarm nhận đặt hàng trực tuyến và giao hàng tận nơi, chưa hỗ trợ
+                            mua và nhận hàng trực tiếp tại văn phòng hoặc trung tâm xử lý đơn hàng</p>
+                        <p class="footer-info__address">Trụ sở chính: Tầng 12 Tòa nhà IFC One Saigon, Số 34, đường Tôn
+                            Đức Thắng, phường Bến Nghé, quận 1, Thành phố Hồ Chí Minh, Việt Nam</p>
+                        <p class="footer-info__certificate">Giấy chứng nhận Đăng ký Kinh doanh số 0309438156 do Sở Kế
+                            hoạch và Đầu tư Thành phố Hồ Chí Minh cấp lần đầu ngày 12/01/2019 và sửa đổi lần thứ 3 ngày
+                            14/08/2022</p>
+                        <p class="footer-info__copyright">© 2022 - Bản quyền thuộc về Công ty TNHH Mich</p>
                     </div>
                 </div>
             </div>
-
-
         </div>
     </div>
+
+    <script src="app.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
 </body>
 
 </html>

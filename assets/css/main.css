@@ -11,31 +11,9 @@
     box-sizing: border-box;
 }
 
-html {
-    /* overflow: hidden; */
-}
-
-.main {}
-
-.header {
-    background-color: rgb(13, 104, 51);
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 70px;
-    color: #fff;
-}
-
-.header .search-box {
-    align-items: center;
-    justify-content: center;
-}
-
-
 /* banner */
 
 .banner {
-    margin-top: 70px !important;
     background-image: url(../img/backgroundBanner.png), linear-gradient(180deg, rgb(13, 104, 51) 0%, #fff 90%);
     background-position: center;
     background-size: contain;
