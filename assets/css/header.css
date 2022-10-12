@@ -470,7 +470,7 @@
 }
 
 .header__logo {
-    width: 170px;
+    width: 144px;
 }
 
 .header__logo-link {
@@ -814,6 +814,7 @@
     position: relative;
     display: flex;
     justify-content: center;
+
 }
 
 .banner__content {
@@ -822,6 +823,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    border-radius: 8px;
+    box-shadow: 0 1px 0.5rem rgba(0, 0, 0, 0.1);
 }
 
 .banner_bg-img-left,
