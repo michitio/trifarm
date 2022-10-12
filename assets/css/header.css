@@ -874,7 +874,7 @@
 .group-item-banner {
     background-color: white;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
 
     position: relative;
     box-sizing: border-box;
@@ -884,17 +884,26 @@
     border-bottom-right-radius: 8px;
     border-bottom-left-radius: 8px;
     overflow: hidden;
+    padding: 8px;
 
 }
 
 .item-banner {
-    width: 16.6%;
-    float: left;
+    width: calc(100% / 6);
     /* text-align: center; */
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    text-decoration: none;
+    color: var(--text-color);
+    padding: 16px 4px;
+    border-radius: 8px;
+}
+
+.item-banner:hover {
+    box-shadow: 0 0 2rem rgba(0, 0, 0, 0.15);
+    color: var(--text-color);
 }
 
 .icon-item-banner {
