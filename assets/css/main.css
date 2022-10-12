@@ -75,8 +75,7 @@ body {
     box-shadow: 0 0 2rem rgba(0, 0, 0, 0.08);
 }
 
-.card__flashsale {
-}
+.card__flashsale {}
 
 .card-img-top {
     width: 100%;
@@ -123,35 +122,24 @@ body {
 .flashsale__time {
     margin: 0 12px;
     color: rgb(255, 91, 102);
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
 }
 
+.flashsale__secs,
+.flashsale__mins,
 .flashsale__hours {
-    min-width: 26px;
-    padding: 1px 4px;
+    margin: 0 4px;
+    display: inline-block;
+    text-align: center;
+    width: 28px;
+    padding: 2px 4px;
     border-radius: 5px;
     font-size: 1.6rem;
     background-color: rgb(255, 91, 102);
     color: white
 }
-
-.flashsale__mins {
-    min-width: 26px;
-    padding: 1px 4px;
-    border-radius: 5px;
-    font-size: 1.6rem;
-    background-color: rgb(255, 91, 102);
-    color: white    
-}
-
-.flashsale__secs {
-    min-width: 26px;
-    padding: 1px 4px;
-    border-radius: 5px;
-    font-size: 1.6rem;
-    background-color: rgb(255, 91, 102);
-    color: white    
-}
-
 
 .card__flashsale .product__sold::before {
     content: "";
@@ -169,7 +157,7 @@ body {
 
 .card__flashsale .product__sold::after {
     content: "";
-    display: block;    
+    display: block;
     position: absolute;
     z-index: 0;
     top: 0;
@@ -218,9 +206,9 @@ body {
 
 /* category */
 
-.col-xl-1--5 { 
-    flex:0 0 auto;
-    width:12.5%
+.col-xl-1--5 {
+    flex: 0 0 auto;
+    width: 12.5%
 }
 
 .category__item {
@@ -247,4 +235,3 @@ body {
 .category__text {
     font-size: 1.4rem;
 }
-
