@@ -24,6 +24,11 @@ html {
     box-sizing: border-box;
 }
 
+body {
+    background: #efefef;
+    color: var(--text-color);
+}
+
 /* grid */
 .grid {
     width: 1200px;
@@ -377,8 +382,12 @@ html {
     box-shadow: 0 1px 0.2rem rgba(0, 0, 0, 0.1);
 }
 
+.pagination-item--active:hover .pagination-item__link {
+    color: var(--white-color);
+}
+
 .pagination-item:hover {
-    background-color: rgba(26, 148, 255, 0.2);
+    background-color: rgba(0, 187, 72, 0.2);
 }
 
 .pagination-item--active:hover {
@@ -394,6 +403,10 @@ html {
     color: #888888;
     min-width: 40px;
     height: 32px;
+}
+
+.pagination-item__link:hover {
+    color: var(--text-color);
 }
 
 .pagination-item__icon {

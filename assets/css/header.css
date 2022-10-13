@@ -18,6 +18,7 @@
     display: flex;
     justify-content: space-between;
     padding: 0;
+    margin: 0 -12px;
 }
 
 .navbar__list {
@@ -466,7 +467,7 @@
     display: flex;
     align-items: center;
     padding-bottom: 12px;
-    margin: 0 12px;
+    margin: 0;
 }
 
 .header__logo {
