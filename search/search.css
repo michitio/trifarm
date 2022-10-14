@@ -1,3 +1,5 @@
+/* https://coolors.co/palettes/trending */
+
 /* modify header */
 .header {
     position: relative;
@@ -58,34 +60,44 @@ a.breadcrumb__link:hover {
     background: inherit;
 }
 
-.category-side {
+.search-side {
     border-radius: 8px;
     background-color: var(--white-color);
+    margin-right: 4px;
 }
 
 .category__heading {
     color: var(--text-color);
     display: flex;
     align-items: center;
-    padding: 12px 12px;
+    padding: 16px 8px 8px;
     margin: 0;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .category__heading-title {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
+    text-transform: capitalize;
 
 }
 
 .category__heading-icon {
     font-size: 1.4rem;
-    padding: 12px 8px;
+    padding: 0 8px;
 }
 
 .category-list {
     margin: 0;
     padding: 4px 0;
     list-style: none;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;   
+    justify-content: center;
+
+    margin-bottom: 4px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .category-item {
@@ -98,39 +110,17 @@ a.breadcrumb__link:hover {
 
 .category-item::before {
     content: "";
-    border-top: 1px solid #f5f5f5;
     position: absolute;
     top: 0;
     left: 18px;
     right: 18px;
 }
 
-.category-item--active .category-item__link {
-    color: var(--primary-color);
-}
-
-.category-item--active .category-item__link::before {
-    content: "";
-    display: block;
-
-    border-width: 4px 5px;
-    border-style: solid;
-    border-color: transparent transparent transparent var(--primary-color);
-    position: absolute;
-    left: 18px;
-    /* top: 38%; */
-    transform: translateY(80%);
-    cursor: pointer;
-
-    /* background-color: red; */
-
-}
-
 .category-item__link {
     font-size: 1.4rem;
     color: var(--text-color);
     text-decoration: none;
-    padding: 10px 12px 10px 32px;
+    padding: 4px 12px 4px 28px;
     display: block;
 
     position: relative;
@@ -140,7 +130,27 @@ a.breadcrumb__link:hover {
 
 .category-item__link:hover {
     color: var(--primary-color);
-    right: -3px;
+    right: -2px;
+}
+
+.category-item--active .category-item__link {
+    color: var(--primary-color);
+    right: -2px;
+    font-weight: 500;
+}
+
+.category-item--active .category-item__link::before {
+    content: "";
+    display: block;
+
+    border-width: 6px 2px;
+    border-style: solid;
+    border-color: var(--primary-color);
+    position: absolute;
+    left: 16px;
+    /* top: 38%; */
+    transform: translateY(35%);
+    cursor: pointer;
 }
 
 /* soft & filter */
@@ -271,8 +281,8 @@ a.breadcrumb__link:hover {
     font-size: 1.2rem;
     font-weight: 500;
     padding: 2px 8px;
-    color: rgb(113, 87, 237);
-    background-color: rgba(236, 233, 253, 0.95);
+    color: rgb(37, 155, 43);
+    background-color: rgba(244, 255, 244, 0.85);
 
     border-bottom-right-radius: 8px;
     border-top-left-radius: 8px;
@@ -289,7 +299,7 @@ a.breadcrumb__link:hover {
     top: 10px;
     left: -4px;
 
-    background: linear-gradient(45deg, rgb(5, 88, 229), var(--primary-color));
+    background: linear-gradient(45deg, rgb(40, 112, 40), var(--primary-color));
     color: var(--white-color);
 
     font-size: 1.1rem;
