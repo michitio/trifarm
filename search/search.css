@@ -35,16 +35,20 @@
 .breadcrumb__link {
     color: #757575;
     text-decoration: none;
-
 }
 
 .breadcrumb__link:hover {
+    cursor: context-menu;
+}
+
+a.breadcrumb__link:hover {
     text-decoration: underline;
     color: #757575;
 }
 
 .breadcrumb__arrow {
     fill: #757575;
+    margin: 0 2px;
 }
 
 
@@ -55,7 +59,7 @@
 }
 
 .category-side {
-    border-radius: 3px;
+    border-radius: 8px;
     background-color: var(--white-color);
 }
 
@@ -117,9 +121,9 @@
     /* top: 38%; */
     transform: translateY(80%);
     cursor: pointer;
-    
+
     /* background-color: red; */
-    
+
 }
 
 .category-item__link {
@@ -144,22 +148,54 @@
 .filter {
     background-color: rgb(255, 255, 255);
     display: flex;
-    align-items: center;
-    padding: 12px 24px;
-    border-radius: 3px;
+    flex-direction: column;
+    padding: 8px 24px;
+    border-radius: 8px;
 }
 
-.filter__label {
-    font-size: 1.4rem;
-    color: #555;
-    margin: 0 12px;
-} 
+.filter__header {
+    font-size: 1.6rem;
+    font-weight: 500;
+    margin-top: 8px;
+    margin-bottom: 4px;
+    margin-left: 16px;
+}
+
+.filter__action {
+    display: flex;
+    align-items: center;
+    margin-left: -6px;
+}
 
 .filter__btn {
     margin: 6px;
-    font-size: 1.4rem;
-    min-width: 95px;
+    font-size: 1.45rem;
+    min-width: 90px;
     box-shadow: 0 1px 0.3rem rgba(0, 0, 0, 0.05);
+    position: relative;
+    text-transform: capitalize;
+}
+
+.filter__btn:hover {
+    color: var(--primary-color);
+}
+
+.filter__btn--avtive {
+    color: var(--primary-color);
+    font-weight: 500;
+    position: relative;
+}
+
+.filter__btn:hover::before,
+.filter__btn--avtive::before {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    width: 48px;
+    height: 4px;
+    border-radius: 2px;
+    background-color: var(--primary-color);
 }
 
 .filter__page {
@@ -169,43 +205,65 @@
 
 /* product item */
 
-.product {
+.card {
+    margin-top: 10px;
+    /* border: 1px solid #bdbdbd; */
+    padding: 0 0 8px 0;
+    overflow: visible;
+}
+
+.product__list {
     margin-bottom: 10px;
 }
 
-.product-item {
-    background-color: var(--white-color);
-    margin-top: 10px;
-    border: 1px solid #EEEEEE;
-    border-radius: 3px;
-    
-    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
-    transition: ease 0.18s;
-    position: relative;
-
-    display: block;
-    text-decoration: none;
+.grid__row {
+    width: 100%;
 }
 
-.product-item:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 1px 20px rgba(0, 0, 0, 0.05);
+.search__row {
+    width: calc(100% + 8px);
 }
 
-.product-item__img {
+.product__img {
     padding-top: 100%;
     background-repeat: no-repeat;
     background-size: contain;
     background-position: top center;
-    border-radius: 3px;
+    border-radius: 8px;
 
     position: relative;
 }
 
-.product-item__freeship {
+.product__name {
+    margin-top: 4px;
+}
+
+.product__react {
+    display: flex;
+    align-items: center;
+}
+
+.product__rating {
+    color: var(--text-color);
+}
+
+.product__sold {
+    margin-left: 8px;
+}
+
+.product__price-old {
+    text-decoration: line-through;
+}
+
+.product__origin {
+    font-size: 1.3rem;
+    margin-top: 12px;
+}
+
+.product__freeship {
     position: absolute;
     bottom: 0;
-    left: 0;
+    right: 0;
 
     display: flex;
     align-items: center;
@@ -216,115 +274,24 @@
     color: rgb(113, 87, 237);
     background-color: rgba(236, 233, 253, 0.95);
 
-    border-bottom-left-radius: 3px;
-    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-top-left-radius: 8px;
 
 }
 
-.product-item__freeship-icon {
+.product__freeship-icon {
     font-size: 1rem;
     margin-right: 6px;
 }
-
-.product-item__name {
-    font-size: 1.3rem;
-    font-weight: 400;
-    color: var(--text-color);
-    line-height: 1.8rem;
-    height: 3.6rem;
-    margin: 10px 10px 4px;
-    overflow: hidden;
-    display: block;
-
-    /* giới hạn 2 dòng */
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 2;
-
-    /* giới hạn 1 dòng */
-    /* chỉnh line height: 1.8rem +
-    -webkit-line-clamp: 2; */
-    
-}
-
-.product-item__price {
-    margin: 8px 10px;
-    display: flex;
-    align-items: baseline;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-.product-item__price-old {
-    font-size: 1.2rem;
-    color: #666666;
-    text-decoration: line-through;
-}
-
-.product-item__price-new {
-    font-size: 1.4rem;
-    color: var(--primary-color);
-    margin-left: 10px;
-}
-
-.product-item__action {
-    display: flex;
-    justify-content: space-between;
-    margin: 4px 10px;
-}
-
-.product-item__heart {
-    font-size: 1.3rem;
-    margin-right: auto;
-}
-
-i.product-item__heart-none {
-    color: var(--text-color);
-}
-
-i.product-item__heart-fill {
-    color: rgb(255, 71, 78);
-    display: none;
-}
-
-/* product-item__hearting */
-.product-item__hearting .product-item__heart-none {
-    display: none;
-}
-
-.product-item__hearting .product-item__heart-fill {
-    display: inline-block;
-}
-
-.product-item__rating {
-    font-size: 1rem;
-    transform: scale(0.8);
-    transform-origin: right;
-    color: rgb(213, 213, 213);
-    margin-top: -1px;
-}
-
-.product-item__rating-yellow {
-    color: rgb(255, 206, 61);
-}
-
-.product-item__info {
-    margin: 4px 10px;
-    display: flex;
-    justify-content: space-between;
-    font-size: 1.2rem;
-    color: #595959;
-}
-
 
 .product-item__trust {
     position: absolute;
     top: 10px;
     left: -4px;
-    
-    background: linear-gradient(45deg, rgb(5, 88, 229), var(--primary-color) );
+
+    background: linear-gradient(45deg, rgb(5, 88, 229), var(--primary-color));
     color: var(--white-color);
-    
+
     font-size: 1.1rem;
     font-weight: 600;
     line-height: 1.5rem;
@@ -354,43 +321,4 @@ i.product-item__heart-fill {
 .product-item__trust-icon {
     margin-right: 3px;
     font-size: 1rem;
-}
-
-.product-item__sale {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 40px;
-    height: 36px;
-    padding-top: 2px;
-    text-align: center;
-    background-color: rgba(255, 212, 36, 0.95);
-
-    border-top-left-radius: 2px;
-    border-top-right-radius: 2px;
-}
-
-.product-item__sale::before {
-    content: "";
-
-    position: absolute;
-    left: 0;
-    top: 100%;
-    border-width: 0 20px 7px;
-    border-style: solid;
-    border-color: transparent rgba(255, 212, 36, 0.95) transparent rgba(255, 212, 36, 0.95);
-}
-
-.product-item__sale-percent {
-    color: rgb(254, 75, 87);
-    font-weight: 600;
-    font-size: 1.2rem;
-    line-height: 1.2rem;
-}
-
-.product-item__sale-label {
-    color: var(--white-color);
-    font-weight: 500;
-    font-size: 1.2rem;
-    line-height: 1.2rem;
 }

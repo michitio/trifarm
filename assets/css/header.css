@@ -490,7 +490,7 @@
     margin: 0 16px 0 48px;
     height: 40px;
     background-color: var(--white-color);
-    border-radius: 3px;
+    border-radius: 8px;
     flex: 1;
     display: flex;
     align-items: center;
@@ -512,7 +512,7 @@
     font-size: 1.4rem;
     color: var(--text-color);
     padding: 12px;
-    border-radius: 3px;
+    border-radius: 8px;
 }
 
 .search__input:focus ~ .header__search-history {
@@ -521,6 +521,7 @@
 
 .search__btn {
     border: none;
+    border-radius: 6px;
     min-height: 32px;
     min-width: 20px;
     margin: 0 4px;
@@ -541,7 +542,6 @@
     left: 0;
     right: 16px;
     background-color: var(--white-color);
-    border-radius: 1px;
     box-shadow: 0 0 16px rgba(0, 0, 0, 0.15);
     
     border-radius: 3px;

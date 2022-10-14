@@ -39,6 +39,10 @@
 }
 
 .breadcrumb__link:hover {
+    cursor: context-menu;
+}
+
+a.breadcrumb__link:hover {
     text-decoration: underline;
     color: #757575;
 }
