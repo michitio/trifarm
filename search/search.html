@@ -184,7 +184,7 @@
 
                             <div class="cart__list--noitem">
                                 <div class="anti-opacity-hover cart__list--noitem-wrap cart__list">
-                                    <img class="cart__list--noitem-img" src="../assets/img/cart-empty3.png" alt="">
+                                    <img class="cart__list--noitem-img" src="../assets/img/icons/cart-empty.png" alt="">
                                     <p class="cart__list--noitem-content">Chưa có sản phẩm</p>
                                 </div>
                             </div>
@@ -427,7 +427,7 @@
                         </h3>
 
                         <ul class="price-list">
-                            <li class="price-item">
+                            <li class="price-item price-item--active">
                                 <a href="#" class="price-item__link">Dưới 150.000</a>
                             </li>
                             <li class="price-item">
@@ -436,7 +436,16 @@
                             <li class="price-item">
                                 <a href="#" class="price-item__link">Trên 550.000</a>
                             </li>
-                            
+                            <div class="price-choose price-item">
+                                <label class="price-item__link" for="price-start">Chọn khoảng giá</label>
+                                <div class="price-box">
+                                    <input id="price-start" type="text" value="0" onfocus="saveValue(event)" onkeyup="formatStringPrice(event)">
+                                    <span>-</span>
+                                    <input id="price-end" type="text" value="0" onfocus="saveValue(event)" onkeyup="formatStringPrice(event)">
+                                    <input type="hidden" id="price-hidden" value="">
+                                </div>
+                                <a href="#" class="price-submit">Áp dụng</a>
+                            </div>
                         </ul>
                     </nav>
 
@@ -1578,6 +1587,7 @@
         </div>
     </div>
 
+    <script src="search.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
