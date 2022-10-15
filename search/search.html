@@ -314,10 +314,10 @@
 
                 <!-- first column -->
                 <div class="search-side grid__col grid__col-2">
-                    <nav class="search__category">
-                        <h3 class="category__heading">
-                            <i class="category__heading-icon fa-solid fa-list-ul"></i>
-                            <span class="category__heading-title">danh mục sản phẩm</span>
+                    <nav class="search__category search__item">
+                        <h3 class="search__heading">
+                            <i class="search__heading-icon ri-menu-2-line"></i>
+                            <span class="search__heading-title">danh mục sản phẩm</span>
                         </h3>
 
                         <ul class="category-list">
@@ -339,102 +339,152 @@
                         </ul>
                     </nav>
 
-                    <nav class="search__place">
-                        <h3 class="category__heading">
-                            <i class="category__heading-icon fa-solid fa-list-ul"></i>
-                            <span class="category__heading-title">danh mục sản phẩm</span>
+                    <nav class="search__place search__item">
+                        <h3 class="search__heading">
+                            <i class="search__heading-icon ri-map-pin-line"></i>
+                            <span class="search__heading-title">nơi bán</span>
                         </h3>
 
-                        <ul class="category-list">
-                            <li class="category-item">
-                                <a href="#" class="category-item__link">Tất cả sản phẩm</a>
+                        <ul class="place-list">
+                            <li class="place-item">
+                                <input class="place-item__check" type="checkbox" id="checkbox1" name="checkbox1"
+                                    value="daklak">
+                                <label class="place-item__label" for="checkbox1"><span></span>Đắk Lắk</label>
                             </li>
-                            <li class="category-item">
-                                <a href="#" class="category-item__link">Gạo, nếp</a>
+
+                            <li class="place-item">
+                                <input class="place-item__check" type="checkbox" id="checkbox2" name="checkbox2"
+                                    value="hochiminh">
+                                <label class="place-item__label" for="checkbox2"><span></span>Hồ Chí Minh</label>
                             </li>
-                            <li class="category-item">
-                                <a href="#" class="category-item__link">Thực phẩm ăn liền</a>
+
+                            <li class="place-item">
+                                <input class="place-item__check" type="checkbox" id="checkbox3" name="checkbox3"
+                                    value="hanoi">
+                                <label class="place-item__label" for="checkbox3"><span></span>Hà Nội</label>
                             </li>
-                            <li class="category-item category-item--active">
-                                <a href="#" class="category-item__link">Rượu</a>
+
+                            <li class="place-item">
+                                <input class="place-item__check" type="checkbox" id="checkbox4" name="checkbox4"
+                                    value="thainguyen">
+                                <label class="place-item__label" for="checkbox4"><span></span>Thái Nguyên</label>
                             </li>
-                            <li class="category-item">
-                                <a href="#" class="category-item__link">Khác</a>
+
+                            <li class="place-item">
+                                <input class="place-item__check" type="checkbox" id="checkbox5" name="checkbox5"
+                                    value="danang">
+                                <label class="place-item__label" for="checkbox5"><span></span>Đà Nẵng</label>
                             </li>
+
                         </ul>
                     </nav>
 
-                    <nav class="search__brand">
-                        <h3 class="category__heading">
-                            <i class="category__heading-icon fa-solid fa-list-ul"></i>
-                            <span class="category__heading-title">danh mục sản phẩm</span>
+                    <nav class="search__brand search__item">
+                        <h3 class="search__heading">
+                            <i class="search__heading-icon ri-price-tag-3-line"></i>
+                            <span class="search__heading-title">thương hiệu</span>
                         </h3>
 
-                        <ul class="category-list">
-                            <li class="category-item">
-                                <a href="#" class="category-item__link">Tất cả sản phẩm</a>
+                        <ul class="brand-list">
+
+                            <li class="brand-item">
+                                <input class="brand-item__check" type="checkbox" id="checkbox1" name="checkbox1"
+                                    value="gaoongtho">
+                                <label class="brand-item__label" for="checkbox1"><span></span>Gạo Ông Thọ</label>
                             </li>
-                            <li class="category-item">
-                                <a href="#" class="category-item__link">Gạo, nếp</a>
+
+                            <li class="brand-item">
+                                <input class="brand-item__check" type="checkbox" id="checkbox1" name="checkbox1"
+                                    value="hatngoctroi">
+                                <label class="brand-item__label" for="checkbox1"><span></span>Hạt Ngọc Trời</label>
                             </li>
-                            <li class="category-item">
-                                <a href="#" class="category-item__link">Thực phẩm ăn liền</a>
+
+                            <li class="brand-item">
+                                <input class="brand-item__check" type="checkbox" id="checkbox1" name="checkbox1"
+                                    value="ecoba">
+                                <label class="brand-item__label" for="checkbox1"><span></span>Ecoba</label>
                             </li>
-                            <li class="category-item category-item--active">
-                                <a href="#" class="category-item__link">Rượu</a>
+
+                            <li class="brand-item">
+                                <input class="brand-item__check" type="checkbox" id="checkbox1" name="checkbox1"
+                                    value="giatruyen" checked>
+                                <label class="brand-item__label" for="checkbox1"><span></span>Gia Truyền</label>
                             </li>
-                            <li class="category-item">
-                                <a href="#" class="category-item__link">Khác</a>
+
+                            <li class="brand-item">
+                                <input class="brand-item__check" type="checkbox" id="checkbox1" name="checkbox1"
+                                    value="nutrichoice">
+                                <label class="brand-item__label" for="checkbox1"><span></span>Nutrichoice</label>
                             </li>
+
                         </ul>
                     </nav>
 
-                    <nav class="search__price">
-                        <h3 class="category__heading">
-                            <i class="category__heading-icon fa-solid fa-list-ul"></i>
-                            <span class="category__heading-title">danh mục sản phẩm</span>
+                    <nav class="search__price search__item">
+                        <h3 class="search__heading">
+                            <ion-icon class="search__heading-icon" name="wallet-outline"></ion-icon>
+                            <span class="search__heading-title">giá</span>
                         </h3>
 
-                        <ul class="category-list">
-                            <li class="category-item">
-                                <a href="#" class="category-item__link">Tất cả sản phẩm</a>
+                        <ul class="price-list">
+                            <li class="price-item">
+                                <a href="#" class="price-item__link">Dưới 150.000</a>
                             </li>
-                            <li class="category-item">
-                                <a href="#" class="category-item__link">Gạo, nếp</a>
+                            <li class="price-item">
+                                <a href="#" class="price-item__link">150.000 — 550.000</a>
                             </li>
-                            <li class="category-item">
-                                <a href="#" class="category-item__link">Thực phẩm ăn liền</a>
+                            <li class="price-item">
+                                <a href="#" class="price-item__link">Trên 550.000</a>
                             </li>
-                            <li class="category-item category-item--active">
-                                <a href="#" class="category-item__link">Rượu</a>
-                            </li>
-                            <li class="category-item">
-                                <a href="#" class="category-item__link">Khác</a>
-                            </li>
+                            
                         </ul>
                     </nav>
 
-                    <nav class="search__react">
-                        <h3 class="category__heading">
-                            <i class="category__heading-icon fa-solid fa-list-ul"></i>
-                            <span class="category__heading-title">danh mục sản phẩm</span>
+                    <nav class="search__react search__item">
+                        <h3 class="search__heading">
+                            <i class="search__heading-icon ri-star-line"></i>
+                            <span class="search__heading-title">đánh giá</span>
                         </h3>
 
-                        <ul class="category-list">
-                            <li class="category-item">
-                                <a href="#" class="category-item__link">Tất cả sản phẩm</a>
+                        <ul class="react-list">
+                            <li class="react-item">
+                                <a href="#" class="react-item__link">
+                                    <div class="product__rating">
+                                        <i class="product__rating-yellow ri-star-fill"></i>
+                                        <i class="product__rating-yellow ri-star-fill"></i>
+                                        <i class="product__rating-yellow ri-star-fill"></i>
+                                        <i class="product__rating-yellow ri-star-fill"></i>
+                                        <i class="product__rating-yellow ri-star-fill"></i>
+                                    </div>
+
+                                    <span>từ 5 sao</span>
+                                </a>
                             </li>
-                            <li class="category-item">
-                                <a href="#" class="category-item__link">Gạo, nếp</a>
+                            <li class="react-item react-item--active">
+                                <a href="#" class="react-item__link">
+                                    <div class="product__rating">
+                                        <i class="product__rating-yellow ri-star-fill"></i>
+                                        <i class="product__rating-yellow ri-star-fill"></i>
+                                        <i class="product__rating-yellow ri-star-fill"></i>
+                                        <i class="product__rating-yellow ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                    </div>
+
+                                    <span>từ 4 sao</span>
+                                </a>
                             </li>
-                            <li class="category-item">
-                                <a href="#" class="category-item__link">Thực phẩm ăn liền</a>
-                            </li>
-                            <li class="category-item category-item--active">
-                                <a href="#" class="category-item__link">Rượu</a>
-                            </li>
-                            <li class="category-item">
-                                <a href="#" class="category-item__link">Khác</a>
+                            <li class="react-item">
+                                <a href="#" class="react-item__link">
+                                    <div class="product__rating">
+                                        <i class="product__rating-yellow ri-star-fill"></i>
+                                        <i class="product__rating-yellow ri-star-fill"></i>
+                                        <i class="product__rating-yellow ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                    </div>
+
+                                    <span>từ 3 sao</span>
+                                </a>
                             </li>
                         </ul>
                     </nav>
@@ -1527,6 +1577,10 @@
             </div>
         </div>
     </div>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
 </body>
 
 </html>

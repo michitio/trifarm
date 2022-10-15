@@ -1,11 +1,14 @@
 :root {
     --primary-color: rgb(0, 187, 72);
+    --primary-dark-color: rgb(0, 172, 66);
+    --primary-light-color: rgb(0, 196, 75);
     /* --primary-color: rgb(0, 192, 72); */
     --white-color: #fff;
     --black-color: #000;
     --bgLight-color: #f2f2f2;
     --text-color: #333;
     --text-lighter-color: #737373;
+    --text-lightest-color: #b8b8b8;
 
     --header-height: 140px;
     --navbar-height: 44px;
