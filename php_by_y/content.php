@@ -1,9 +1,9 @@
 <?php
 
 if (isset($_GET['id_dm']))
-    $result = queryData($link, "select * from tb_danhmuc where id = " . $_GET['id_dm']);
+    $result = chayTruyVanTraVeDL($link, "select * from tb_danhmuc where id = " . $_GET['id_dm']);
 else
-    $result = queryData($link, "select * from tb_danhmuc");
+    $result = chayTruyVanTraVeDL($link, "select * from tb_danhmuc");
 
 while ($rows = mysqli_fetch_assoc($result)) {
     echo "
@@ -23,13 +23,13 @@ while ($rows = mysqli_fetch_assoc($result)) {
         </div>
         <img src='" . $rows2['img'] . "' width='100px' height='100px' style='object-fit: contain;'>
     </a>
-        <form action='xulygiohang.php?id=" . $rows2['id']."' method='post'>
+        <form action='xulygiohang.php' method='post'>
         <input type='number' name='soluong' min='1' value='1'>
-        <input type='submit' name='addcart' value='Them Vao Gio'>
-        <input type='hidden' value='" . $rows2['id'] . " name='id'>
-        <input type='hidden' value='" . $rows2['name'] . " name='name'>
-        <input type='hidden' value='" . $rows2['img'] . " name='img'>
-        <input type='hidden' value='" . $rows2['price'] . " name='price'>
+        <input type='submit' name='action' value='Thêm Vào Giỏ Hàng'>
+        <input type='hidden' value='" . $rows2['id'] . "' name='id'>
+        <input type='hidden' value='" . $rows2['name'] . "' name='name'>
+        <input type='hidden' value='" . $rows2['img'] . "' name='img'>
+        <input type='hidden' value='" . $rows2['price'] . "' name='price'>
         </form> 
             ";
     }

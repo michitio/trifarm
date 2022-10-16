@@ -15,16 +15,16 @@
                         <form method='post' action='xulygiohang.php'>
                         <input type='hidden' name='id' value='" . $k . "'>
                         <span>" . $v['name'] . "</span> 
-                        <span>" . $v['id'] . "</span> 
-                        <span>" . $v['price'] . "</span>
+                        <img class='product-img' src='" . $v['img'] . "'/>
+                        <span>Giá: "  . number_format((int) $v['price'], 0, '', '.') . "VNĐ</span>
                         <input type='number' value='" . $v['soluong'] . "' name='soluong' min='1'>
-                        <input type='submit' name='action' value='Cap nhat'>
-                        <input type='submit' name='action' value='Xoa hang'>
+                        <input type='submit' name='action' value='Cập Nhật'>
+                        <input type='submit' name='action' value='Xóa Hàng'>
                         </form>";
                         echo "
                         <form method='post' action='xulygiohang.php'>
-                        <input type='submit' name='action' value='xoahetchotao'>
-                        <input type='submit' name='action' value='trolaimuahang'>
+                        <input type='submit' name='action' value='Xóa Hết Giỏ Hàng'>
+                        <input type='submit' name='action' value='Trở Lại Danh Mục SP'>
                         </form>";
             }
             ?>

@@ -2,7 +2,7 @@
 <?php
     include_once "db_trifarm.php";
     $link = null;
-    connect($link);
+    taoKetNoi($link);
     ?>
     <li><a class='menu-item' href="./">Tất cả sản phẩm</a></li>
 

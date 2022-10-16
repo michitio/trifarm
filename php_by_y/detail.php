@@ -23,12 +23,12 @@
                     <div class='product'>
                         <img class='product-img' src='" . $rows['img'] . "'/>
                         <div class='product-info'>
-                            <h2>" . $rows['name'] . "</h2>
-                            <p>" . number_format((int) $rows['price'], 0, '', '.') . "VNĐ</p>
-                            <p>" . $rows['desc'] . "</p>
+                            <h2>" . $rows['name'] . "</h2> 
+                            <p>Giá:" . number_format((int) $rows['price'], 0, '', '.') . "VNĐ</p>
+                            <p>Mô tả: " . $rows['desc'] . "</p>
                             <form method='post' action='xulygiohang.php'>
                             <input type='number' name='soluong' min='1' value='1'>
-                            <input type='submit' name='action' value='Them vao gio'>
+                            <input type='submit' name='action' value='Thêm Vào Giỏ Hàng'>
                             <input type='hidden' name='id' value='" . $rows['id'] . " '>
                             <input type='hidden' name='img' value='" . $rows['img'] . " '>
                             <input type='hidden' name='name' value='" . $rows['name'] . "'>

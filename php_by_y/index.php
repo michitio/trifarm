@@ -11,7 +11,7 @@
     <?php
     include_once "db_trifarm.php";
     $link = null;
-    connect($link);
+    taoKetNoi($link);
     ?>
 
     <div class="container">

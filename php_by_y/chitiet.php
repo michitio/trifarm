@@ -11,7 +11,7 @@
     <div id="content">
         <?php
         if (isset($_GET['sp'])) {
-            $result = queryData($link, "SELECT * from tb_sanpham where id=" . $_GET['sp']);
+            $result = chayTruyVanTraVeDL($link, "SELECT * from tb_sanpham where id=" . $_GET['sp']);
             while ($rows = mysqli_fetch_assoc($result)) {
                 echo " <div>
                 <h2>" . $rows['name'] . "</h2>
@@ -19,7 +19,7 @@
                 <p>Giá: " . $rows['price'] . "</p>
                 <form method='post' action='xulygiohang.php'>
                 <input type='number' name='soluong' min='1' value='1'>
-                <input type='submit' name='action' value='Them vao gio'>
+                <input type='submit' name='action' value='Thêm Vào Giỏ Hàng'>
                 <input type='hidden' name='id' value='" . $rows['id'] . " '>
                 <input type='hidden' name='img' value='" . $rows['img'] . " '>
                 <input type='hidden' name='name' value='" . $rows['name'] . "'>

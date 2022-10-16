@@ -1,7 +1,7 @@
 <?php
 require_once "config.php";
 
-function connect(&$link)
+function taoKetNoi(&$link)
 {
 	$link = mysqli_connect(HOST, USER, PASSWORD, DB);
 	if (mysqli_connect_errno()) {
@@ -10,13 +10,13 @@ function connect(&$link)
 	}
 }
 
-function queryData($link, $q)
+function chayTruyVanTraVeDL($link, $q)
 {
 	$result = mysqli_query($link, $q);
 	return $result;
 }
 
-function queryNoData($link, $q)
+function chayTruyVanKhongTraVeDL($link, $q) 
 {
 	$result = mysqli_query($link, $q);
 	return $result;
@@ -32,16 +32,16 @@ function dispose($link)
 
 function executeNonQuery($q) {
 	$link = NULL;
-	connect($link);
-	$result = queryNoData($link, $q);
+	taoKetNoi($link);
+	$result = chayTruyVanKhongTraVeDL($link, $q);
 	dispose($link);
 	return $result;
 }
 
 function executeQuery($q) {
 	$link = NULL;
-	connect($link);
-	$result = queryData($link, $q);
+	taoKetNoi($link);
+	$result = chayTruyVanTraVeDL($link, $q);
 	dispose($link);
 	return $result;
 }
